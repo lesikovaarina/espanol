@@ -9,6 +9,7 @@ import {
   toast, modal, closeModal, loading, sayBtn, isIOS, isStandalone, norm, localParse,
 } from './core.js';
 import { startSession, renderSession, afterRenderSession, sessionActions, sessionForms, regionLabel } from './session.js';
+import { screenLevel, levelActions, levelInSession } from './level.js';
 
 const view = () => document.getElementById('view');
 const NAV = [
@@ -37,7 +38,7 @@ function parseRoute() {
 
 function render() {
   const { name, arg } = parseRoute();
-  const inSession = name === 'session';
+  const inSession = name === 'session' || (name === 'level' && levelInSession());
   closeModal();
   document.body.classList.toggle('in-session', inSession);
   const screens = {
@@ -52,7 +53,6 @@ function render() {
   const badge = $('#nav .badge');
   if (badge) { badge.textContent = due; badge.hidden = !due; }
   if (inSession) afterRenderSession();
-  if (name === 'level') afterLevel();
   if (!inSession) window.scrollTo(0, 0);
 }
 
@@ -405,49 +405,6 @@ function screenLibrary(fid) {
   </form>`;
 }
 
-// ---------- Проверка уровня ----------
-let L = null;
-function screenLevel() {
-  const lib = state.library;
-  if (!lib) { loadLibrary().then(rerender); return '<div class="spinner"></div>'; }
-  if (!L) return `${header('Проверка уровня', { back: 'settings' })}
-    <div class="card"><p>Покажу около 30 слов от A2 до C1. Отвечайте честно: «знаю» — и я попрошу выбрать перевод, чтобы проверить.</p>
-    <p class="muted small">Сейчас: <b>${esc(state.profile.level)}</b>. Займёт 3–4 минуты.</p>
-    <button class="btn primary big" data-act="level-start">Начать</button></div>`;
-  const item = L.items[L.i];
-  if (!item) return levelResult();
-  if (L.stage === 'check') {
-    if (!L.options) L.options = shuffle([item.ru, ...item.wrong]);
-    return `<div class="session-top"><button class="icon-btn" data-act="level-quit">✕</button><div class="progress"><div style="width:${(L.i / L.items.length) * 100}%"></div></div><span class="muted small">${L.i + 1}/${L.items.length}</span></div>
-    <div class="task"><h2 class="task-title">Что значит</h2><div class="prompt-word es">${esc(item.es)}</div>
-    <div class="options">${L.options.map((o, i) => `<button class="option" data-act="level-pick" data-i="${i}">${esc(o)}</button>`).join('')}</div></div>`;
-  }
-  return `<div class="session-top"><button class="icon-btn" data-act="level-quit">✕</button><div class="progress"><div style="width:${(L.i / L.items.length) * 100}%"></div></div><span class="muted small">${L.i + 1}/${L.items.length}</span></div>
-  <div class="task"><h2 class="task-title">Знаете это слово?</h2><div class="prompt-word es">${esc(item.es)} ${sayBtn(item.es)}</div>
-  <div class="options"><button class="option" data-act="level-ans" data-a="yes">Знаю</button><button class="option" data-act="level-ans" data-a="maybe">Кажется, знаю</button><button class="option" data-act="level-ans" data-a="no">Не знаю</button></div></div>`;
-}
-function afterLevel() {}
-
-const LEVELS = ['A2', 'B1', 'B2', 'C1'];
-function computeLevel(res) {
-  const ratio = lv => { const r = res.filter(x => x.level === lv); return r.length ? r.filter(x => x.ok).length / r.length : 0; };
-  let level = 'A2 (начало)';
-  for (const lv of LEVELS) {
-    const r = ratio(lv);
-    if (r >= 0.7) level = lv;
-    else { if (r >= 0.35) level = `${lv} (начало)`; break; }
-  }
-  return { level, ratios: LEVELS.map(lv => [lv, Math.round(ratio(lv) * 100)]) };
-}
-function levelResult() {
-  if (!L.result) { L.result = computeLevel(L.res); saveProfile({ level: L.result.level }); }
-  return `${header('Ваш уровень', { back: 'settings' })}
-  <div class="card center"><div class="big-emoji">🎯</div><h2>${esc(L.result.level)}</h2>
-  ${L.result.ratios.map(([lv, p]) => `<div class="lvl-row"><span>${lv}</span><div class="bar"><div style="width:${p}%"></div></div><span>${p}%</span></div>`).join('')}
-  <p class="muted small">Под этот уровень Gemini будет подбирать новые слова и примеры.</p>
-  <button class="btn primary" data-act="level-done">Готово</button></div>`;
-}
-
 // ---------- Настройки ----------
 function screenSettings() {
   const p = state.profile;
@@ -510,6 +467,7 @@ function screenSettings() {
 // ---------- Действия ----------
 const actions = {
   ...sessionActions,
+  ...levelActions,
   say: el => sp.speak(el.dataset.text, { slow: !!el.dataset.slow, accent: state.profile.accent }),
   dismiss: async el => { await saveProfile({ [el.dataset.k]: true }); rerender(); },
   'close-modal': () => closeModal(),
@@ -590,25 +548,6 @@ const actions = {
     updateBadge();
     go('home');
   },
-  'level-start': async () => {
-    const lib = await loadLibrary();
-    L = { items: lib.levelTest, i: 0, res: [], stage: 'ask' };
-    rerender();
-  },
-  'level-ans': el => {
-    const item = L.items[L.i];
-    if (el.dataset.a === 'no') { L.res.push({ level: item.level, ok: false }); L.i += 1; }
-    else { L.stage = 'check'; L.options = null; }
-    rerender();
-  },
-  'level-pick': el => {
-    const item = L.items[L.i];
-    L.res.push({ level: item.level, ok: L.options[Number(el.dataset.i)] === item.ru });
-    L.i += 1; L.stage = 'ask'; L.options = null;
-    rerender();
-  },
-  'level-quit': () => { L = null; go('settings'); },
-  'level-done': () => { L = null; go('home'); },
 };
 
 async function withGemini(text, fn) {
@@ -719,7 +658,7 @@ const forms = {
       await saveProfile({ geminiKey: key });
       toast('Ключ работает ✓');
     } catch (e) {
-      if (e.code === 'network') { await saveProfile({ geminiKey: key }); toast('Ключ сохранён, но проверить не удалось: нет интернета', 'error'); }
+      if (e.code === 'network' || e.code === 'timeout') { await saveProfile({ geminiKey: key }); toast('Ключ сохранён, но проверить его сейчас не удалось — попробуйте распознать фото', 'error'); }
       else toast(e.message, 'error');
     } finally {
       loading(null);

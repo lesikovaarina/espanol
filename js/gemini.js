@@ -46,21 +46,39 @@ function rules(level) {
 - moduleName — 2–4 слова по-русски по теме.`;
 }
 
-async function call(key, parts, schema = SCHEMA) {
+// fetch с ограничением по времени: без него зависший запрос крутится бесконечно
+async function fetchWithTimeout(url, opts, ms) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), ms);
+  try {
+    return await fetch(url, { ...opts, signal: ctrl.signal });
+  } catch (e) {
+    if (e.name === 'AbortError') throw new GeminiError('Gemini слишком долго не отвечает. Попробуйте ещё раз.', 'timeout');
+    throw new GeminiError('Нет связи с Gemini. Проверьте интернет.', 'network');
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+let workingModel = null; // модель, которая ответила в прошлый раз, пробуем первой
+
+async function call(key, parts, schema = SCHEMA, timeoutMs = 120000) {
   let lastErr;
-  for (const model of MODELS) {
+  const order = workingModel ? [workingModel, ...MODELS.filter(m => m !== workingModel)] : MODELS;
+  for (const model of order) {
     let res;
     try {
-      res = await fetch(`${API}${model}:generateContent`, {
+      res = await fetchWithTimeout(`${API}${model}:generateContent`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
         body: JSON.stringify({
           contents: [{ role: 'user', parts }],
           generationConfig: { responseMimeType: 'application/json', responseSchema: schema, temperature: 0.2 },
         }),
-      });
+      }, timeoutMs);
     } catch (e) {
-      throw new GeminiError('Нет связи с Gemini. Проверьте интернет.', 'network');
+      if (e.code === 'timeout') { lastErr = e; continue; }
+      throw e;
     }
     if (res.status === 404) { lastErr = new GeminiError(`Модель ${model} недоступна`, 'model'); continue; }
     const body = await res.json().catch(() => ({}));
@@ -72,6 +90,7 @@ async function call(key, parts, schema = SCHEMA) {
       if (res.status >= 500) { lastErr = new GeminiError('Gemini временно не отвечает. Попробуйте ещё раз.', 'server'); continue; }
       throw new GeminiError('Ошибка Gemini: ' + msg, 'other');
     }
+    workingModel = model;
     const text = body?.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
     try {
       return JSON.parse(text);
@@ -121,7 +140,18 @@ export async function moreWords(key, topic, existing, level) {
 Не включай слова, которые у неё уже есть: ${existing.slice(0, 400).join(', ')}` }]);
 }
 
+// Быстрая проверка ключа: список моделей, без генерации текста.
 export async function testKey(key) {
-  const schema = { type: 'OBJECT', properties: { ok: { type: 'BOOLEAN' } }, required: ['ok'] };
-  return call(key, [{ text: 'Верни {"ok": true}' }], schema);
+  const res = await fetchWithTimeout(`${API}?pageSize=200`, { headers: { 'x-goog-api-key': key } }, 15000);
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    const msg = body?.error?.message || '';
+    if (res.status === 400 || res.status === 401 || res.status === 404 || /API key/i.test(msg)) throw new GeminiError('Ключ не подходит. Скопируйте его ещё раз целиком (начинается с AIza).', 'key');
+    if (res.status === 403) throw new GeminiError('Ключ не работает на этом сайте (403). Проверьте ограничения ключа в Google AI Studio.', 'key');
+    throw new GeminiError('Не удалось проверить ключ: ' + (msg || res.status), 'other');
+  }
+  const names = (body.models || []).map(m => m.name.replace('models/', ''));
+  const flash = MODELS.find(m => names.includes(m));
+  if (flash) workingModel = flash;
+  return { ok: true, models: names };
 }

@@ -339,7 +339,12 @@ ol li { margin-bottom: 4px; }
 .result-list { text-align: left; padding-left: 20px; margin: 0; }
 .result-list li { margin-bottom: 6px; }
 
-.lvl-row { display: grid; grid-template-columns: 32px 1fr 44px; gap: 8px; align-items: center; margin: 6px 0; font-size: 14px; }
+.lvl-row { display: grid; grid-template-columns: 92px 1fr 96px; gap: 10px; align-items: center; margin: 10px 0; font-size: 14px; text-align: left; }
+.lvl-row b { text-align: right; font-size: 13px; }
+.section-chip { align-self: center; }
+.gap-sentence { font-size: 22px; line-height: 1.5; text-align: center; padding: 8px 0; }
+.gap-sentence .blank { display: inline-block; min-width: 56px; border-bottom: 2px solid var(--accent); color: transparent; }
+.option.dontknow { color: var(--muted); border-style: dashed; text-align: center; }
 .lvl-row .bar { height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
 .lvl-row .bar div { height: 100%; background: var(--accent); }
 

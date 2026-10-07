@@ -2194,326 +2194,1010 @@
    ]
   }
  ],
- "levelTest": [
-  {
-   "es": "la llave",
-   "ru": "ключ",
-   "level": "A2",
-   "wrong": [
-    "замок",
-    "дверь",
-    "окно"
-   ]
-  },
-  {
-   "es": "cansado",
-   "ru": "усталый",
-   "level": "A2",
-   "wrong": [
-    "сердитый",
-    "скучный",
-    "больной"
-   ]
-  },
-  {
-   "es": "alquilar",
-   "ru": "снимать, арендовать",
-   "level": "A2",
-   "wrong": [
-    "покупать",
-    "продавать",
-    "строить"
-   ]
-  },
-  {
-   "es": "el vecino",
-   "ru": "сосед",
-   "level": "A2",
-   "wrong": [
-    "родственник",
-    "гость",
-    "друг детства"
-   ]
-  },
-  {
-   "es": "barato",
-   "ru": "дешёвый",
-   "level": "A2",
-   "wrong": [
-    "дорогой",
-    "старый",
-    "грязный"
-   ]
-  },
-  {
-   "es": "temprano",
-   "ru": "рано",
-   "level": "A2",
-   "wrong": [
-    "поздно",
-    "быстро",
-    "временно"
-   ]
-  },
-  {
-   "es": "la cuenta",
-   "ru": "счёт",
-   "level": "A2",
-   "wrong": [
-    "сдача",
-    "чаевые",
-    "касса"
-   ]
-  },
-  {
-   "es": "despertarse",
-   "ru": "просыпаться",
-   "level": "A2",
-   "wrong": [
-    "засыпать",
-    "одеваться",
-    "отдыхать"
-   ]
-  },
-  {
-   "es": "aprovechar",
-   "ru": "воспользоваться (случаем)",
-   "level": "B1",
-   "wrong": [
-    "одобрить",
-    "приблизиться",
-    "обеспечить"
-   ]
-  },
-  {
-   "es": "quejarse",
-   "ru": "жаловаться",
-   "level": "B1",
-   "wrong": [
-    "оставаться",
-    "жениться",
-    "смеяться"
-   ]
-  },
-  {
-   "es": "el sueldo",
-   "ru": "зарплата",
-   "level": "B1",
-   "wrong": [
-    "пол",
-    "сон",
-    "долг"
-   ]
-  },
-  {
-   "es": "a menudo",
-   "ru": "часто",
-   "level": "B1",
-   "wrong": [
-    "немного",
-    "внезапно",
-    "медленно"
-   ]
-  },
-  {
-   "es": "lograr",
-   "ru": "добиться, суметь",
-   "level": "B1",
-   "wrong": [
-    "плакать",
-    "украсть",
-    "хвалить"
-   ]
-  },
-  {
-   "es": "la deuda",
-   "ru": "долг",
-   "level": "B1",
-   "wrong": [
-    "сомнение",
-    "хозяйка",
-    "налог"
-   ]
-  },
-  {
-   "es": "averiguar",
-   "ru": "выяснить",
-   "level": "B1",
-   "wrong": [
-    "испортить",
-    "поливать",
-    "стареть"
-   ]
-  },
-  {
-   "es": "el ascenso",
-   "ru": "повышение (в должности)",
-   "level": "B1",
-   "wrong": [
-    "лифт",
-    "спуск",
-    "увольнение"
-   ]
-  },
-  {
-   "es": "la huelga",
-   "ru": "забастовка",
-   "level": "B2",
-   "wrong": [
-    "след",
-    "огород",
-    "праздник"
-   ]
-  },
-  {
-   "es": "agotador",
-   "ru": "изнурительный",
-   "level": "B2",
-   "wrong": [
-    "увлекательный",
-    "неудачный",
-    "опустошённый"
-   ]
-  },
-  {
-   "es": "empeñarse",
-   "ru": "упорно стремиться, настаивать",
-   "level": "B2",
-   "wrong": [
-    "закладывать в ломбард",
-    "смущаться",
-    "начинать"
-   ]
-  },
-  {
-   "es": "la incertidumbre",
-   "ru": "неопределённость",
-   "level": "B2",
-   "wrong": [
-    "недоверие",
-    "неудобство",
-    "недоразумение"
-   ]
-  },
-  {
-   "es": "el malentendido",
-   "ru": "недоразумение",
-   "level": "B2",
-   "wrong": [
-    "невежда",
-    "злодей",
-    "плохое настроение"
-   ]
-  },
-  {
-   "es": "a raíz de",
-   "ru": "вследствие",
-   "level": "B2",
-   "wrong": [
-    "с корнем",
-    "в начале",
-    "вопреки"
-   ]
-  },
-  {
-   "es": "el auge",
-   "ru": "подъём, расцвет",
-   "level": "B2",
-   "wrong": [
-    "упадок",
-    "жадность",
-    "объём"
-   ]
-  },
-  {
-   "es": "desempeñar",
-   "ru": "исполнять (обязанности, роль)",
-   "level": "B2",
-   "wrong": [
-    "разочаровывать",
-    "безработный",
-    "выкупать"
-   ]
-  },
-  {
-   "es": "el desasosiego",
-   "ru": "тревога, беспокойство",
-   "level": "C1",
-   "wrong": [
-    "безразличие",
-    "усталость",
-    "одиночество"
-   ]
-  },
-  {
-   "es": "soslayar",
-   "ru": "обходить стороной (тему, проблему)",
-   "level": "C1",
-   "wrong": [
-    "смягчать",
-    "подчёркивать",
-    "утешать"
-   ]
-  },
-  {
-   "es": "ineludible",
-   "ru": "неизбежный",
-   "level": "C1",
-   "wrong": [
-    "невыносимый",
-    "неуловимый",
-    "непонятный"
-   ]
-  },
-  {
-   "es": "el atisbo",
-   "ru": "проблеск, намёк",
-   "level": "C1",
-   "wrong": [
-    "упрёк",
-    "обман",
-    "вершина"
-   ]
-  },
-  {
-   "es": "menoscabar",
-   "ru": "подрывать, умалять",
-   "level": "C1",
-   "wrong": [
-    "уменьшать цену",
-    "клеветать",
-    "обыскивать"
-   ]
-  },
-  {
-   "es": "ensimismado",
-   "ru": "погружённый в себя",
-   "level": "C1",
-   "wrong": [
-    "самоуверенный",
-    "одинаковый",
-    "восхищённый"
-   ]
-  },
-  {
-   "es": "el talante",
-   "ru": "нрав, расположение духа",
-   "level": "C1",
-   "wrong": [
-    "талант",
-    "ловкость",
-    "ростовщик"
-   ]
-  },
-  {
-   "es": "la entelequia",
-   "ru": "иллюзия, фикция",
-   "level": "C1",
-   "wrong": [
-    "целостность",
-    "хитрость",
-    "набор"
-   ]
-  }
- ]
+ "levelTest": {
+  "vocab": [
+   {
+    "es": "la llave",
+    "ru": "ключ",
+    "level": 1,
+    "wrong": [
+     "замок",
+     "дверь",
+     "окно"
+    ]
+   },
+   {
+    "es": "cansado",
+    "ru": "усталый",
+    "level": 1,
+    "wrong": [
+     "сердитый",
+     "скучный",
+     "больной"
+    ]
+   },
+   {
+    "es": "alquilar",
+    "ru": "снимать, арендовать",
+    "level": 1,
+    "wrong": [
+     "покупать",
+     "продавать",
+     "строить"
+    ]
+   },
+   {
+    "es": "el vecino",
+    "ru": "сосед",
+    "level": 1,
+    "wrong": [
+     "родственник",
+     "гость",
+     "друг детства"
+    ]
+   },
+   {
+    "es": "barato",
+    "ru": "дешёвый",
+    "level": 1,
+    "wrong": [
+     "дорогой",
+     "старый",
+     "грязный"
+    ]
+   },
+   {
+    "es": "temprano",
+    "ru": "рано",
+    "level": 1,
+    "wrong": [
+     "поздно",
+     "быстро",
+     "временно"
+    ]
+   },
+   {
+    "es": "la cuenta",
+    "ru": "счёт",
+    "level": 1,
+    "wrong": [
+     "сдача",
+     "чаевые",
+     "касса"
+    ]
+   },
+   {
+    "es": "despertarse",
+    "ru": "просыпаться",
+    "level": 1,
+    "wrong": [
+     "засыпать",
+     "одеваться",
+     "отдыхать"
+    ]
+   },
+   {
+    "es": "el abrigo",
+    "ru": "пальто",
+    "level": 1,
+    "wrong": [
+     "зонт",
+     "укрытие",
+     "шарф"
+    ]
+   },
+   {
+    "es": "lleno",
+    "ru": "полный, заполненный",
+    "level": 1,
+    "wrong": [
+     "пустой",
+     "плоский",
+     "мокрый"
+    ]
+   },
+   {
+    "es": "enseñar",
+    "ru": "учить (кого-то), показывать",
+    "level": 1,
+    "wrong": [
+     "учиться",
+     "подписывать",
+     "ждать"
+    ]
+   },
+   {
+    "es": "ruidoso",
+    "ru": "шумный",
+    "level": 1,
+    "wrong": [
+     "тихий",
+     "грубый",
+     "круглый"
+    ]
+   },
+   {
+    "es": "ganar",
+    "ru": "зарабатывать; выигрывать",
+    "level": 1,
+    "wrong": [
+     "тратить",
+     "терять",
+     "хотеть"
+    ]
+   },
+   {
+    "es": "la nube",
+    "ru": "облако",
+    "level": 1,
+    "wrong": [
+     "луна",
+     "снег",
+     "ветер"
+    ]
+   },
+   {
+    "es": "aprovechar",
+    "ru": "воспользоваться (случаем)",
+    "level": 2,
+    "wrong": [
+     "одобрить",
+     "приблизиться",
+     "обеспечить"
+    ]
+   },
+   {
+    "es": "quejarse",
+    "ru": "жаловаться",
+    "level": 2,
+    "wrong": [
+     "оставаться",
+     "жениться",
+     "смеяться"
+    ]
+   },
+   {
+    "es": "el sueldo",
+    "ru": "зарплата",
+    "level": 2,
+    "wrong": [
+     "пол",
+     "сон",
+     "долг"
+    ]
+   },
+   {
+    "es": "a menudo",
+    "ru": "часто",
+    "level": 2,
+    "wrong": [
+     "немного",
+     "внезапно",
+     "медленно"
+    ]
+   },
+   {
+    "es": "lograr",
+    "ru": "добиться, суметь",
+    "level": 2,
+    "wrong": [
+     "плакать",
+     "украсть",
+     "хвалить"
+    ]
+   },
+   {
+    "es": "la deuda",
+    "ru": "долг",
+    "level": 2,
+    "wrong": [
+     "сомнение",
+     "хозяйка",
+     "налог"
+    ]
+   },
+   {
+    "es": "averiguar",
+    "ru": "выяснить",
+    "level": 2,
+    "wrong": [
+     "испортить",
+     "поливать",
+     "стареть"
+    ]
+   },
+   {
+    "es": "el ascenso",
+    "ru": "повышение (в должности)",
+    "level": 2,
+    "wrong": [
+     "лифт",
+     "спуск",
+     "увольнение"
+    ]
+   },
+   {
+    "es": "agradecer",
+    "ru": "благодарить",
+    "level": 2,
+    "wrong": [
+     "соглашаться",
+     "украшать",
+     "расти"
+    ]
+   },
+   {
+    "es": "la herramienta",
+    "ru": "инструмент",
+    "level": 2,
+    "wrong": [
+     "железо",
+     "ранение",
+     "кузница"
+    ]
+   },
+   {
+    "es": "el desarrollo",
+    "ru": "развитие",
+    "level": 2,
+    "wrong": [
+     "завтрак",
+     "беспорядок",
+     "разрушение"
+    ]
+   },
+   {
+    "es": "el sabor",
+    "ru": "вкус",
+    "level": 2,
+    "wrong": [
+     "знание",
+     "запах",
+     "пот"
+    ]
+   },
+   {
+    "es": "suceder",
+    "ru": "случаться, происходить",
+    "level": 2,
+    "wrong": [
+     "преуспевать",
+     "садиться",
+     "подозревать"
+    ]
+   },
+   {
+    "es": "la meta",
+    "ru": "цель",
+    "level": 2,
+    "wrong": [
+     "металл",
+     "метла",
+     "мачта"
+    ]
+   },
+   {
+    "es": "la huelga",
+    "ru": "забастовка",
+    "level": 3,
+    "wrong": [
+     "след",
+     "огород",
+     "праздник"
+    ]
+   },
+   {
+    "es": "agotador",
+    "ru": "изнурительный",
+    "level": 3,
+    "wrong": [
+     "увлекательный",
+     "неудачный",
+     "опустошённый"
+    ]
+   },
+   {
+    "es": "empeñarse",
+    "ru": "упорно стремиться, настаивать",
+    "level": 3,
+    "wrong": [
+     "закладывать в ломбард",
+     "смущаться",
+     "начинать"
+    ]
+   },
+   {
+    "es": "la incertidumbre",
+    "ru": "неопределённость",
+    "level": 3,
+    "wrong": [
+     "недоверие",
+     "неудобство",
+     "недоразумение"
+    ]
+   },
+   {
+    "es": "el malentendido",
+    "ru": "недоразумение",
+    "level": 3,
+    "wrong": [
+     "невежда",
+     "злодей",
+     "плохое настроение"
+    ]
+   },
+   {
+    "es": "a raíz de",
+    "ru": "вследствие",
+    "level": 3,
+    "wrong": [
+     "с корнем",
+     "в начале",
+     "вопреки"
+    ]
+   },
+   {
+    "es": "el auge",
+    "ru": "подъём, расцвет",
+    "level": 3,
+    "wrong": [
+     "упадок",
+     "жадность",
+     "объём"
+    ]
+   },
+   {
+    "es": "desempeñar",
+    "ru": "исполнять (обязанности, роль)",
+    "level": 3,
+    "wrong": [
+     "разочаровывать",
+     "быть безработным",
+     "выкупать из залога"
+    ]
+   },
+   {
+    "es": "la sequía",
+    "ru": "засуха",
+    "level": 3,
+    "wrong": [
+     "сухарь",
+     "пила",
+     "жажда"
+    ]
+   },
+   {
+    "es": "el soborno",
+    "ru": "взятка",
+    "level": 3,
+    "wrong": [
+     "сироп",
+     "шум",
+     "избыток"
+    ]
+   },
+   {
+    "es": "la amenaza",
+    "ru": "угроза",
+    "level": 3,
+    "wrong": [
+     "рассвет",
+     "любовница",
+     "обещание"
+    ]
+   },
+   {
+    "es": "fomentar",
+    "ru": "поощрять, способствовать",
+    "level": 3,
+    "wrong": [
+     "голодать",
+     "бродить",
+     "обогревать"
+    ]
+   },
+   {
+    "es": "el desempleo",
+    "ru": "безработица",
+    "level": 3,
+    "wrong": [
+     "разочарование",
+     "выполнение",
+     "увольнение"
+    ]
+   },
+   {
+    "es": "ajeno",
+    "ru": "чужой, посторонний",
+    "level": 3,
+    "wrong": [
+     "далёкий",
+     "чесночный",
+     "одинокий"
+    ]
+   },
+   {
+    "es": "el desasosiego",
+    "ru": "тревога, беспокойство",
+    "level": 4,
+    "wrong": [
+     "безразличие",
+     "усталость",
+     "одиночество"
+    ]
+   },
+   {
+    "es": "soslayar",
+    "ru": "обходить стороной (тему, проблему)",
+    "level": 4,
+    "wrong": [
+     "смягчать",
+     "подчёркивать",
+     "утешать"
+    ]
+   },
+   {
+    "es": "ineludible",
+    "ru": "неизбежный",
+    "level": 4,
+    "wrong": [
+     "невыносимый",
+     "неуловимый",
+     "непонятный"
+    ]
+   },
+   {
+    "es": "el atisbo",
+    "ru": "проблеск, намёк",
+    "level": 4,
+    "wrong": [
+     "упрёк",
+     "обман",
+     "вершина"
+    ]
+   },
+   {
+    "es": "menoscabar",
+    "ru": "подрывать, умалять",
+    "level": 4,
+    "wrong": [
+     "снижать цену",
+     "клеветать",
+     "обыскивать"
+    ]
+   },
+   {
+    "es": "ensimismado",
+    "ru": "погружённый в себя",
+    "level": 4,
+    "wrong": [
+     "самоуверенный",
+     "одинаковый",
+     "восхищённый"
+    ]
+   },
+   {
+    "es": "el talante",
+    "ru": "нрав, расположение духа",
+    "level": 4,
+    "wrong": [
+     "талант",
+     "ловкость",
+     "ростовщик"
+    ]
+   },
+   {
+    "es": "la entelequia",
+    "ru": "иллюзия, фикция",
+    "level": 4,
+    "wrong": [
+     "целостность",
+     "хитрость",
+     "набор"
+    ]
+   },
+   {
+    "es": "la idiosincrasia",
+    "ru": "своеобразие, менталитет",
+    "level": 4,
+    "wrong": [
+     "невежество",
+     "безумие",
+     "одиночество"
+    ]
+   },
+   {
+    "es": "acuciante",
+    "ru": "насущный, неотложный",
+    "level": 4,
+    "wrong": [
+     "острый (на вкус)",
+     "колючий",
+     "обвинительный"
+    ]
+   },
+   {
+    "es": "el resquicio",
+    "ru": "лазейка, щёлочка",
+    "level": 4,
+    "wrong": [
+     "остаток",
+     "обида",
+     "ответ"
+    ]
+   },
+   {
+    "es": "pormenorizado",
+    "ru": "подробный, детальный",
+    "level": 4,
+    "wrong": [
+     "уменьшенный",
+     "незначительный",
+     "несовершеннолетний"
+    ]
+   },
+   {
+    "es": "zanjar",
+    "ru": "окончательно уладить (вопрос)",
+    "level": 4,
+    "wrong": [
+     "рыть канаву",
+     "подпрыгивать",
+     "вздыхать"
+    ]
+   },
+   {
+    "es": "el recelo",
+    "ru": "подозрительность, недоверие",
+    "level": 4,
+    "wrong": [
+     "перерыв",
+     "рецепт",
+     "ревность"
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "q": "Mi hermana ___ médica y hoy ___ muy cansada.",
+    "answer": "es / está",
+    "wrong": [
+     "está / es",
+     "es / es",
+     "está / está"
+    ],
+    "level": 1,
+    "topic": "ser и estar"
+   },
+   {
+    "q": "Ayer ___ al cine con unos amigos.",
+    "answer": "fui",
+    "wrong": [
+     "voy",
+     "iré",
+     "fuera"
+    ],
+    "level": 1,
+    "topic": "прошедшее время (indefinido)"
+   },
+   {
+    "q": "A mí me ___ mucho las empanadas.",
+    "answer": "gustan",
+    "wrong": [
+     "gusta",
+     "gusto",
+     "gustamos"
+    ],
+    "level": 1,
+    "topic": "глагол gustar"
+   },
+   {
+    "q": "Mañana ___ a visitar a mi abuela.",
+    "answer": "voy",
+    "wrong": [
+     "vaya",
+     "fui",
+     "iría"
+    ],
+    "level": 1,
+    "topic": "ir a + инфинитив"
+   },
+   {
+    "q": "¿De dónde ___ vos?",
+    "answer": "sos",
+    "wrong": [
+     "estás",
+     "son",
+     "sea"
+    ],
+    "level": 1,
+    "topic": "voseo: ser"
+   },
+   {
+    "q": "Este café es ___ rico ___ el de ayer.",
+    "answer": "más … que",
+    "wrong": [
+     "más … como",
+     "tan … que",
+     "mucho … de"
+    ],
+    "level": 1,
+    "topic": "сравнения"
+   },
+   {
+    "q": "—¿Dónde está mi celular? —No sé, no ___ veo.",
+    "answer": "lo",
+    "wrong": [
+     "le",
+     "la",
+     "se"
+    ],
+    "level": 1,
+    "topic": "местоимения lo/la/le"
+   },
+   {
+    "q": "Hace dos años que ___ en Buenos Aires.",
+    "answer": "vivo",
+    "wrong": [
+     "viví",
+     "vivía",
+     "viviré"
+    ],
+    "level": 1,
+    "topic": "hace … que"
+   },
+   {
+    "q": "Este regalo es ___ vos.",
+    "answer": "para",
+    "wrong": [
+     "por",
+     "a",
+     "de"
+    ],
+    "level": 1,
+    "topic": "por и para"
+   },
+   {
+    "q": "¿Ya ___ el libro que te presté?",
+    "answer": "leíste",
+    "wrong": [
+     "leías",
+     "lees",
+     "leerás"
+    ],
+    "level": 1,
+    "topic": "прошедшее время (indefinido)"
+   },
+   {
+    "q": "Cuando era chica, ___ todos los veranos a la costa.",
+    "answer": "íbamos",
+    "wrong": [
+     "fuimos",
+     "vamos",
+     "iremos"
+    ],
+    "level": 2,
+    "topic": "imperfecto для привычек"
+   },
+   {
+    "q": "Quiero que vos ___ a la fiesta.",
+    "answer": "vengas",
+    "wrong": [
+     "venís",
+     "vendrás",
+     "venir"
+    ],
+    "level": 2,
+    "topic": "subjuntivo после querer que"
+   },
+   {
+    "q": "Ojalá ___ buen tiempo el sábado.",
+    "answer": "haga",
+    "wrong": [
+     "hace",
+     "hará",
+     "hizo"
+    ],
+    "level": 2,
+    "topic": "subjuntivo после ojalá"
+   },
+   {
+    "q": "Si tengo tiempo, te ___ mañana.",
+    "answer": "llamo",
+    "wrong": [
+     "llamaría",
+     "llamara",
+     "llamé"
+    ],
+    "level": 2,
+    "topic": "условия: si + настоящее"
+   },
+   {
+    "q": "Estaba durmiendo cuando ___ el teléfono.",
+    "answer": "sonó",
+    "wrong": [
+     "sonaba",
+     "suena",
+     "ha sonado"
+    ],
+    "level": 2,
+    "topic": "imperfecto и indefinido"
+   },
+   {
+    "q": "___ la puerta, por favor. (vos)",
+    "answer": "Cerrá",
+    "wrong": [
+     "Cerrás",
+     "Cerrar",
+     "Cerraste"
+    ],
+    "level": 2,
+    "topic": "повелительное наклонение с vos"
+   },
+   {
+    "q": "Le pedí el libro a Juan y me ___ prestó.",
+    "answer": "lo",
+    "wrong": [
+     "le",
+     "la",
+     "se"
+    ],
+    "level": 2,
+    "topic": "два местоимения (me lo, se lo)"
+   },
+   {
+    "q": "Te llamo cuando ___ a casa.",
+    "answer": "llegue",
+    "wrong": [
+     "llego",
+     "llegaré",
+     "llegara"
+    ],
+    "level": 2,
+    "topic": "cuando + subjuntivo"
+   },
+   {
+    "q": "Trabajo mucho ___ ganar más plata.",
+    "answer": "para",
+    "wrong": [
+     "por",
+     "a",
+     "de"
+    ],
+    "level": 2,
+    "topic": "por и para"
+   },
+   {
+    "q": "Cuando llegué, la película ya ___.",
+    "answer": "había empezado",
+    "wrong": [
+     "empezaría",
+     "haya empezado",
+     "empieza"
+    ],
+    "level": 2,
+    "topic": "pluscuamperfecto"
+   },
+   {
+    "q": "Si ___ más tiempo, aprendería a tocar la guitarra.",
+    "answer": "tuviera",
+    "wrong": [
+     "tendría",
+     "tengo",
+     "tenga"
+    ],
+    "level": 3,
+    "topic": "условия: si + imperfecto de subjuntivo"
+   },
+   {
+    "q": "No creo que ___ razón.",
+    "answer": "tengas",
+    "wrong": [
+     "tenés",
+     "tendrás",
+     "tuviste"
+    ],
+    "level": 3,
+    "topic": "subjuntivo после no creo que"
+   },
+   {
+    "q": "Habla como si lo ___ todo.",
+    "answer": "supiera",
+    "wrong": [
+     "sabe",
+     "sepa",
+     "sabría"
+    ],
+    "level": 3,
+    "topic": "como si + imperfecto de subjuntivo"
+   },
+   {
+    "q": "Aunque ___ mañana, vamos a ir a la playa.",
+    "answer": "llueva",
+    "wrong": [
+     "llovería",
+     "llovió",
+     "haya llovido"
+    ],
+    "level": 3,
+    "topic": "aunque + subjuntivo"
+   },
+   {
+    "q": "Si me hubieras avisado, te ___ a buscar al aeropuerto.",
+    "answer": "habría ido",
+    "wrong": [
+     "habré ido",
+     "haya ido",
+     "había ido"
+    ],
+    "level": 3,
+    "topic": "условия в прошлом"
+   },
+   {
+    "q": "Lleva tres horas ___ el informe.",
+    "answer": "escribiendo",
+    "wrong": [
+     "escribir",
+     "escrito",
+     "escribe"
+    ],
+    "level": 3,
+    "topic": "llevar + gerundio"
+   },
+   {
+    "q": "Es importante que todos ___ a tiempo.",
+    "answer": "lleguen",
+    "wrong": [
+     "llegan",
+     "llegarán",
+     "llegaron"
+    ],
+    "level": 3,
+    "topic": "subjuntivo после es importante que"
+   },
+   {
+    "q": "No encontré a nadie que ___ ayudarme.",
+    "answer": "pudiera",
+    "wrong": [
+     "podía",
+     "puede",
+     "podrá"
+    ],
+    "level": 3,
+    "topic": "subjuntivo в придаточных"
+   },
+   {
+    "q": "Esta es la razón por ___ me fui.",
+    "answer": "la cual",
+    "wrong": [
+     "lo cual",
+     "cuyo",
+     "quien"
+    ],
+    "level": 3,
+    "topic": "относительные слова"
+   },
+   {
+    "q": "Me molesta que la gente ___ tarde.",
+    "answer": "llegue",
+    "wrong": [
+     "llega",
+     "llegará",
+     "llegó"
+    ],
+    "level": 3,
+    "topic": "subjuntivo после эмоций"
+   },
+   {
+    "q": "___ sabido, no habría venido.",
+    "answer": "De haberlo",
+    "wrong": [
+     "Al haberlo",
+     "Por haberlo",
+     "Con haberlo"
+    ],
+    "level": 4,
+    "topic": "de + infinitivo compuesto"
+   },
+   {
+    "q": "Por mucho que ___, no me vas a convencer.",
+    "answer": "insistas",
+    "wrong": [
+     "insistís",
+     "insistirás",
+     "insististe"
+    ],
+    "level": 4,
+    "topic": "por mucho que + subjuntivo"
+   },
+   {
+    "q": "No contesta el teléfono; ___ salido.",
+    "answer": "habrá",
+    "wrong": [
+     "habría",
+     "hubo",
+     "haya"
+    ],
+    "level": 4,
+    "topic": "будущее предположения"
+   },
+   {
+    "q": "El mes pasado me pidió que se lo ___ cuanto antes.",
+    "answer": "enviara",
+    "wrong": [
+     "envío",
+     "enviaré",
+     "he enviado"
+    ],
+    "level": 4,
+    "topic": "согласование времён"
+   },
+   {
+    "q": "Mañana vamos a la playa, ___ llueva.",
+    "answer": "a no ser que",
+    "wrong": [
+     "sin embargo",
+     "por lo tanto",
+     "ya que"
+    ],
+    "level": 4,
+    "topic": "союзы с subjuntivo"
+   },
+   {
+    "q": "¡Ni que ___ millonario! Mirá lo que gastás.",
+    "answer": "fueras",
+    "wrong": [
+     "sos",
+     "seas",
+     "serías"
+    ],
+    "level": 4,
+    "topic": "ni que + imperfecto de subjuntivo"
+   },
+   {
+    "q": "Diga ___ diga, no le creas.",
+    "answer": "lo que",
+    "wrong": [
+     "que",
+     "cual",
+     "lo cual"
+    ],
+    "level": 4,
+    "topic": "конструкции «diga lo que diga»"
+   },
+   {
+    "q": "Cuanto más estudio, ___ entiendo.",
+    "answer": "más",
+    "wrong": [
+     "tanto",
+     "mucho",
+     "muy"
+    ],
+    "level": 4,
+    "topic": "cuanto más … más"
+   },
+   {
+    "q": "El proyecto, ___ financiación todavía no está clara, se presenta mañana.",
+    "answer": "cuya",
+    "wrong": [
+     "cuyo",
+     "del que",
+     "que su"
+    ],
+    "level": 4,
+    "topic": "cuyo / cuya"
+   },
+   {
+    "q": "Si lo ___ sabido a tiempo, lo habríamos evitado.",
+    "answer": "hubiéramos",
+    "wrong": [
+     "habríamos",
+     "habíamos",
+     "hayamos"
+    ],
+    "level": 4,
+    "topic": "si + pluscuamperfecto de subjuntivo"
+   }
+  ]
+ }
 }

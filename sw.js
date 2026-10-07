@@ -1,8 +1,8 @@
 // Офлайн: держим файлы приложения в кэше. При обновлении меняйте VERSION.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const FILES = [
   './', 'index.html', 'styles.css', 'manifest.webmanifest', 'library.json',
-  'js/app.js', 'js/core.js', 'js/db.js', 'js/srs.js', 'js/session.js', 'js/gemini.js', 'js/speech.js',
+  'js/app.js', 'js/core.js', 'js/db.js', 'js/srs.js', 'js/session.js', 'js/gemini.js', 'js/speech.js', 'js/level.js',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
 ];
 
