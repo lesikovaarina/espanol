@@ -1,0 +1,2519 @@
+{
+ "version": 1,
+ "folders": [
+  {
+   "id": "trabajo",
+   "emoji": "💼",
+   "name": "Работа и деньги",
+   "level": "B1",
+   "words": [
+    {
+     "es": "aprovechar",
+     "ru": "воспользоваться (случаем), использовать с выгодой",
+     "note": "",
+     "example": "Aprovechá que hoy no llueve y salí a caminar.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el ascenso",
+     "ru": "повышение (в должности)",
+     "note": "",
+     "example": "Le dieron un ascenso después de dos años.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "ahorrar",
+     "ru": "копить, экономить",
+     "note": "",
+     "example": "Estoy ahorrando para viajar al sur.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la jubilación",
+     "ru": "пенсия",
+     "note": "jubilarse — выйти на пенсию",
+     "example": "Mi viejo cobra la jubilación a principio de mes.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la entrevista de trabajo",
+     "ru": "собеседование",
+     "note": "",
+     "example": "¿Cómo te fue en la entrevista de trabajo?",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "el currículum",
+     "ru": "резюме",
+     "note": "также CV",
+     "example": "Mandame tu currículum por mail.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "renunciar",
+     "ru": "уволиться (по собственному желанию), отказаться",
+     "note": "despedir — уволить кого-то",
+     "example": "Renunció porque no le pagaban bien.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "contratar",
+     "ru": "нанять",
+     "note": "",
+     "example": "La empresa va a contratar a tres personas.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "cobrar",
+     "ru": "получать деньги; брать плату",
+     "note": "",
+     "example": "¿Cuánto te cobraron por el arreglo?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la factura",
+     "ru": "счёт, квитанция",
+     "note": "в Аргентине facturas — ещё и сладкая выпечка",
+     "example": "Llegó la factura de la luz.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el presupuesto",
+     "ru": "бюджет; смета",
+     "note": "",
+     "example": "Pedí un presupuesto para pintar el departamento.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la deuda",
+     "ru": "долг",
+     "note": "",
+     "example": "Por fin pagué todas mis deudas.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "prestar",
+     "ru": "одолжить (кому-то)",
+     "note": "pedir prestado — взять взаймы",
+     "example": "¿Me prestás mil pesos hasta el viernes?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el impuesto",
+     "ru": "налог",
+     "note": "",
+     "example": "Los impuestos subieron otra vez.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la inflación",
+     "ru": "инфляция",
+     "note": "",
+     "example": "Con la inflación, los precios cambian cada semana.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el aguinaldo",
+     "ru": "тринадцатая зарплата",
+     "note": "выплачивается в июне и декабре",
+     "example": "En diciembre cobramos el aguinaldo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la cuota",
+     "ru": "платёж в рассрочку; взнос",
+     "note": "en cuotas — в рассрочку",
+     "example": "Lo compré en doce cuotas sin interés.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el monotributo",
+     "ru": "упрощённый налоговый режим для самозанятых",
+     "note": "",
+     "example": "Me inscribí en el monotributo para poder facturar.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el plazo",
+     "ru": "срок",
+     "note": "a plazo fijo — срочный вклад",
+     "example": "El plazo para pagar vence el lunes.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el gasto",
+     "ru": "расход, трата",
+     "note": "",
+     "example": "Este mes tuvimos muchos gastos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la ganancia",
+     "ru": "прибыль",
+     "note": "",
+     "example": "El negocio tuvo buenas ganancias este año.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el emprendimiento",
+     "ru": "своё дело, небольшой бизнес",
+     "note": "",
+     "example": "Tiene un emprendimiento de ropa online.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "estar a cargo de",
+     "ru": "отвечать за, руководить",
+     "note": "",
+     "example": "Ella está a cargo del equipo de ventas.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "el feriado",
+     "ru": "праздничный выходной день",
+     "note": "Исп. el día festivo",
+     "example": "El lunes es feriado, así que no se labura.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el/la colega",
+     "ru": "коллега",
+     "note": "",
+     "example": "Mis colegas me organizaron una despedida.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el horario laboral",
+     "ru": "рабочий график",
+     "note": "",
+     "example": "¿Cuál es tu horario laboral?",
+     "region": "общее",
+     "type": "phrase"
+    }
+   ]
+  },
+  {
+   "id": "caracter",
+   "emoji": "💛",
+   "name": "Характер и чувства",
+   "level": "B1",
+   "words": [
+    {
+     "es": "quejarse",
+     "ru": "жаловаться",
+     "note": "quejarse de algo",
+     "example": "Siempre te quejás del calor.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "orgulloso",
+     "ru": "гордый",
+     "note": "ж. р. orgullosa",
+     "example": "Estoy muy orgullosa de vos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la envidia",
+     "ru": "зависть",
+     "note": "",
+     "example": "Me da envidia tu viaje.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "agradecer",
+     "ru": "благодарить",
+     "note": "",
+     "example": "Te agradezco mucho la ayuda.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la vergüenza",
+     "ru": "стыд, неловкость",
+     "note": "¡Qué vergüenza! — как стыдно / неловко",
+     "example": "Me da vergüenza hablar en público.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "celoso",
+     "ru": "ревнивый",
+     "note": "ж. р. celosa",
+     "example": "Mi novio es un poco celoso.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el humor",
+     "ru": "настроение; юмор",
+     "note": "estar de mal humor — быть не в духе",
+     "example": "Hoy estoy de mal humor.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "enojarse",
+     "ru": "злиться, сердиться",
+     "note": "Исп. enfadarse",
+     "example": "No te enojes, era un chiste.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "extrañar",
+     "ru": "скучать (по кому-то)",
+     "note": "Исп. echar de menos",
+     "example": "Extraño mucho a mi familia.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "ponerse nervioso",
+     "ru": "занервничать",
+     "note": "",
+     "example": "Me pongo nerviosa antes de los exámenes.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "terco",
+     "ru": "упрямый",
+     "note": "ж. р. terca",
+     "example": "Sos muy terco, nunca cambiás de opinión.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "tacaño",
+     "ru": "жадный, скупой",
+     "note": "ж. р. tacaña",
+     "example": "No seas tacaño, invitá vos esta vez.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la confianza",
+     "ru": "доверие; уверенность",
+     "note": "",
+     "example": "Le tengo mucha confianza.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "confiar en",
+     "ru": "доверять",
+     "note": "",
+     "example": "Confío en vos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la paciencia",
+     "ru": "терпение",
+     "note": "",
+     "example": "Con los chicos hay que tener paciencia.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "sorprender",
+     "ru": "удивлять",
+     "note": "",
+     "example": "Me sorprendió tu mensaje.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "arrepentirse",
+     "ru": "сожалеть, раскаиваться",
+     "note": "arrepentirse de algo",
+     "example": "No me arrepiento de nada.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la soledad",
+     "ru": "одиночество",
+     "note": "",
+     "example": "A veces disfruto de la soledad.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "disfrutar",
+     "ru": "наслаждаться, получать удовольствие",
+     "note": "",
+     "example": "¡Disfrutá el finde!",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "preocuparse",
+     "ru": "беспокоиться, волноваться",
+     "note": "preocuparse por algo",
+     "example": "No te preocupes, todo va a salir bien.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "harto",
+     "ru": "сытый по горло, уставший от",
+     "note": "estar harto de algo",
+     "example": "Estoy harta del tráfico.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "emocionarse",
+     "ru": "растрогаться, разволноваться",
+     "note": "",
+     "example": "Me emocioné con la película.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la bronca",
+     "ru": "злость, досада",
+     "note": "разг.; me da bronca — меня бесит",
+     "example": "Me da bronca que lleguen siempre tarde.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "mentiroso",
+     "ru": "лжец; лживый",
+     "note": "ж. р. mentirosa",
+     "example": "No le creas, es un mentiroso.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "generoso",
+     "ru": "щедрый",
+     "note": "ж. р. generosa",
+     "example": "Tu abuela es muy generosa.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "tener ganas de",
+     "ru": "хотеть, иметь желание",
+     "note": "+ инфинитив",
+     "example": "Tengo ganas de comer un helado.",
+     "region": "общее",
+     "type": "grammar"
+    }
+   ]
+  },
+  {
+   "id": "verbos",
+   "emoji": "⚡",
+   "name": "Частые глаголы B1",
+   "level": "B1",
+   "words": [
+    {
+     "es": "conseguir",
+     "ru": "достать, добиться, получить",
+     "note": "",
+     "example": "Conseguí entradas para el recital.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "darse cuenta",
+     "ru": "понять, заметить, осознать",
+     "note": "darse cuenta de algo",
+     "example": "Me di cuenta de que me olvidé las llaves.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "soler",
+     "ru": "обычно (делать)",
+     "note": "soler + инфинитив; suelo, solés",
+     "example": "Suelo tomar mate a la tarde.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "lograr",
+     "ru": "суметь, добиться",
+     "note": "",
+     "example": "Logré terminar el proyecto a tiempo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "acordarse",
+     "ru": "помнить, вспомнить",
+     "note": "acordarse de; vos te acordás",
+     "example": "¿Te acordás de mí?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "olvidarse",
+     "ru": "забыть",
+     "note": "olvidarse de algo",
+     "example": "Me olvidé de llamarte, perdón.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "devolver",
+     "ru": "вернуть",
+     "note": "",
+     "example": "Te devuelvo el libro mañana.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "mudarse",
+     "ru": "переехать",
+     "note": "",
+     "example": "Nos mudamos a Palermo el mes pasado.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "quedar en",
+     "ru": "договориться (о чём-то)",
+     "note": "quedar также: оставаться; подходить (об одежде)",
+     "example": "Quedamos en vernos a las ocho.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "tardar",
+     "ru": "занимать (время), задерживаться",
+     "note": "",
+     "example": "¿Cuánto tardás en llegar?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "probar",
+     "ru": "пробовать; примерять",
+     "note": "vos probás",
+     "example": "¿Probaste el dulce de leche?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "elegir",
+     "ru": "выбирать",
+     "note": "vos elegís",
+     "example": "No sé qué elegir.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "cumplir",
+     "ru": "выполнять; исполняться (о годах)",
+     "note": "",
+     "example": "Mañana cumplo treinta años.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "alcanzar",
+     "ru": "хватать (о деньгах, времени); догнать",
+     "note": "",
+     "example": "Este mes no me alcanza la plata.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "fijarse",
+     "ru": "обратить внимание, проверить",
+     "note": "очень частое «fijate»",
+     "example": "Fijate si quedó leche en la heladera.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "animarse",
+     "ru": "решиться, осмелиться",
+     "note": "animarse a + инфинитив",
+     "example": "¿Te animás a saltar en paracaídas?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "sacar",
+     "ru": "вынуть, достать; сделать (фото)",
+     "note": "sacar una foto",
+     "example": "Sacame una foto acá.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "equivocarse",
+     "ru": "ошибаться",
+     "note": "",
+     "example": "Perdón, me equivoqué de número.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "evitar",
+     "ru": "избегать",
+     "note": "",
+     "example": "Trato de evitar el centro en hora pico.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "compartir",
+     "ru": "делиться; жить вместе",
+     "note": "",
+     "example": "Compartimos un departamento con dos amigas.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "averiguar",
+     "ru": "выяснить, разузнать",
+     "note": "",
+     "example": "Voy a averiguar el horario del museo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "arreglar",
+     "ru": "чинить; уладить",
+     "note": "",
+     "example": "Tengo que arreglar la bici.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "convencer",
+     "ru": "убедить",
+     "note": "",
+     "example": "Me convenciste, vamos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "cambiar de opinión",
+     "ru": "передумать",
+     "note": "",
+     "example": "Si cambiás de opinión, avisame.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "pasarla bien",
+     "ru": "хорошо провести время",
+     "note": "¡Que la pases bien!",
+     "example": "La pasamos re bien en la fiesta.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "dejar de",
+     "ru": "перестать, бросить (делать)",
+     "note": "+ инфинитив",
+     "example": "Dejé de fumar hace un año.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "volver a",
+     "ru": "снова (сделать)",
+     "note": "volver a + инфинитив",
+     "example": "Volví a leer ese libro.",
+     "region": "общее",
+     "type": "grammar"
+    }
+   ]
+  },
+  {
+   "id": "conectores",
+   "emoji": "🔗",
+   "name": "Связки для речи",
+   "level": "B1",
+   "words": [
+    {
+     "es": "aunque",
+     "ru": "хотя; даже если",
+     "note": "aunque + subjuntivo = даже если",
+     "example": "Aunque llueva, vamos a ir.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "en cambio",
+     "ru": "зато, напротив",
+     "note": "",
+     "example": "Yo prefiero el café; mi hermana, en cambio, toma mate.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "por lo tanto",
+     "ru": "поэтому, следовательно",
+     "note": "",
+     "example": "No estudié, por lo tanto no aprobé.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "o sea",
+     "ru": "то есть (разг.)",
+     "note": "",
+     "example": "O sea, ¿no venís?",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "es decir",
+     "ru": "то есть",
+     "note": "",
+     "example": "Llego en dos días, es decir, el jueves.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "sino",
+     "ru": "а (после отрицания)",
+     "note": "no… sino…",
+     "example": "No es rojo, sino naranja.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "de todos modos",
+     "ru": "в любом случае",
+     "note": "",
+     "example": "De todos modos, gracias por avisar.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "mientras",
+     "ru": "пока, в то время как",
+     "note": "",
+     "example": "Mientras cocinás, pongo la mesa.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "en cuanto",
+     "ru": "как только",
+     "note": "+ subjuntivo для будущего",
+     "example": "Te llamo en cuanto llegue.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "a pesar de",
+     "ru": "несмотря на",
+     "note": "",
+     "example": "A pesar del frío, salimos a correr.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "por supuesto",
+     "ru": "конечно",
+     "note": "",
+     "example": "—¿Me ayudás? —¡Por supuesto!",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "en realidad",
+     "ru": "на самом деле",
+     "note": "",
+     "example": "En realidad, no tengo ganas de salir.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "de hecho",
+     "ru": "фактически, более того",
+     "note": "",
+     "example": "De hecho, ya lo sabía.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "igual",
+     "ru": "всё равно (разг.)",
+     "note": "также: одинаковый",
+     "example": "Está lloviendo, pero igual voy.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "capaz que",
+     "ru": "может быть, возможно (разг.)",
+     "note": "",
+     "example": "Capaz que llueve mañana.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "por las dudas",
+     "ru": "на всякий случай",
+     "note": "Исп. por si acaso",
+     "example": "Llevá paraguas, por las dudas.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "al final",
+     "ru": "в конце концов, в итоге",
+     "note": "",
+     "example": "Al final no fuimos al cine.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "encima",
+     "ru": "вдобавок, к тому же (разг.)",
+     "note": "также: сверху",
+     "example": "Llegó tarde y encima sin avisar.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "en vez de",
+     "ru": "вместо",
+     "note": "",
+     "example": "En vez de quejarte, hacé algo.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "ya que",
+     "ru": "поскольку, раз уж",
+     "note": "",
+     "example": "Ya que estás, comprá pan.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "siempre y cuando",
+     "ru": "при условии, что",
+     "note": "+ subjuntivo",
+     "example": "Te lo presto siempre y cuando me lo devuelvas.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "por un lado… por otro lado",
+     "ru": "с одной стороны… с другой стороны",
+     "note": "",
+     "example": "Por un lado me gusta, por otro lado es caro.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "además",
+     "ru": "кроме того, к тому же",
+     "note": "",
+     "example": "Es lindo y además barato.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "hace falta",
+     "ru": "нужно, необходимо",
+     "note": "hace falta + сущ./инф.",
+     "example": "Hace falta mucha paciencia.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "a la larga",
+     "ru": "в долгосрочной перспективе, со временем",
+     "note": "",
+     "example": "A la larga, vas a ver que valió la pena.",
+     "region": "общее",
+     "type": "phrase"
+    }
+   ]
+  },
+  {
+   "id": "viajes",
+   "emoji": "🚌",
+   "name": "Путешествия, транспорт и город",
+   "level": "B1",
+   "words": [
+    {
+     "es": "el equipaje",
+     "ru": "багаж",
+     "note": "",
+     "example": "Perdieron mi equipaje en el aeropuerto.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la demora",
+     "ru": "задержка",
+     "note": "Исп. чаще el retraso",
+     "example": "El vuelo tiene dos horas de demora.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "alojarse",
+     "ru": "остановиться (в гостинице и т. п.)",
+     "note": "",
+     "example": "Nos alojamos en un hostel en San Telmo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el trámite",
+     "ru": "бумажная процедура, формальность",
+     "note": "",
+     "example": "Tengo que hacer un trámite en Migraciones.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "sacar turno",
+     "ru": "записаться (на приём)",
+     "note": "Исп. pedir cita",
+     "example": "Saqué turno para renovar el DNI.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "el colectivo",
+     "ru": "автобус (городской)",
+     "note": "Исп. el autobús; разг. el bondi",
+     "example": "Tomo el colectivo 152 para ir al trabajo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la parada",
+     "ru": "остановка",
+     "note": "",
+     "example": "¿Dónde queda la parada del 60?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el subte",
+     "ru": "метро (в Буэнос-Айресе)",
+     "note": "Исп. el metro",
+     "example": "El subte es más rápido que el colectivo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el boleto",
+     "ru": "билет (на транспорт)",
+     "note": "Исп. el billete",
+     "example": "El boleto subió otra vez.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el pasaje",
+     "ru": "билет (на самолёт, дальний автобус)",
+     "note": "",
+     "example": "Compré los pasajes a Bariloche.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la vereda",
+     "ru": "тротуар",
+     "note": "Исп. la acera",
+     "example": "Caminá por la vereda, no por la calle.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la cuadra",
+     "ru": "квартал (от угла до угла)",
+     "note": "способ мерить расстояние",
+     "example": "La farmacia está a tres cuadras.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la esquina",
+     "ru": "угол (улицы)",
+     "note": "",
+     "example": "Te espero en la esquina.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "doblar",
+     "ru": "повернуть",
+     "note": "",
+     "example": "Doblá a la derecha en la esquina.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el semáforo",
+     "ru": "светофор",
+     "note": "",
+     "example": "Cruzá cuando el semáforo esté en verde.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el tránsito",
+     "ru": "дорожное движение; пробки",
+     "note": "Исп. el tráfico; hay mucho tránsito — пробки",
+     "example": "A esta hora hay mucho tránsito.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "perder el vuelo",
+     "ru": "опоздать на рейс",
+     "note": "",
+     "example": "Casi pierdo el vuelo por el tránsito.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "la escala",
+     "ru": "пересадка (в перелёте)",
+     "note": "sin escalas — без пересадок",
+     "example": "El vuelo hace escala en San Pablo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la valija",
+     "ru": "чемодан",
+     "note": "Исп. la maleta",
+     "example": "Ya armé la valija.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la aduana",
+     "ru": "таможня",
+     "note": "",
+     "example": "Tardamos una hora en la aduana.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el peaje",
+     "ru": "плата за проезд по дороге",
+     "note": "",
+     "example": "En la ruta hay tres peajes.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "manejar",
+     "ru": "водить (машину)",
+     "note": "Исп. conducir",
+     "example": "¿Sabés manejar?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "estacionar",
+     "ru": "парковать(ся)",
+     "note": "Исп. aparcar",
+     "example": "Es imposible estacionar en el centro.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el remís",
+     "ru": "такси по вызову",
+     "note": "",
+     "example": "Pedí un remís para ir a Ezeiza.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "hacer dedo",
+     "ru": "путешествовать автостопом",
+     "note": "Исп. hacer autostop",
+     "example": "Recorrimos la Patagonia haciendo dedo.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "la terminal de ómnibus",
+     "ru": "автовокзал (междугородних автобусов)",
+     "note": "в Буэнос-Айресе — Retiro",
+     "example": "El micro sale de la terminal de ómnibus a las diez.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "el micro",
+     "ru": "междугородний автобус",
+     "note": "",
+     "example": "Fuimos a Mendoza en micro.",
+     "region": "AR",
+     "type": "word"
+    }
+   ]
+  },
+  {
+   "id": "salud",
+   "emoji": "🩺",
+   "name": "Здоровье и тело",
+   "level": "B1",
+   "words": [
+    {
+     "es": "el resfrío",
+     "ru": "простуда",
+     "note": "Исп. el resfriado",
+     "example": "Tengo un resfrío terrible.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la receta",
+     "ru": "рецепт (врача; кулинарный)",
+     "note": "",
+     "example": "Sin receta no te venden ese remedio.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "doler",
+     "ru": "болеть",
+     "note": "как gustar: me duele, te duele",
+     "example": "Me duele mucho la cabeza.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "mejorarse",
+     "ru": "поправиться",
+     "note": "¡Que te mejores! — выздоравливай!",
+     "example": "Espero que te mejores pronto.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la fiebre",
+     "ru": "температура, жар",
+     "note": "tener fiebre",
+     "example": "El nene tiene fiebre desde ayer.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la guardia",
+     "ru": "приёмный покой, неотложка",
+     "note": "Исп. urgencias",
+     "example": "Fuimos a la guardia a las tres de la mañana.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la obra social",
+     "ru": "медицинская страховка (через работу)",
+     "note": "",
+     "example": "¿Tu obra social cubre el dentista?",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "la prepaga",
+     "ru": "частная медстраховка",
+     "note": "",
+     "example": "La prepaga aumentó otra vez.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el turno",
+     "ru": "запись (к врачу); смена",
+     "note": "Исп. la cita",
+     "example": "Tengo turno con el médico el martes.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el remedio",
+     "ru": "лекарство",
+     "note": "также: средство, выход",
+     "example": "¿Tomaste el remedio?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la pastilla",
+     "ru": "таблетка",
+     "note": "",
+     "example": "Tomá una pastilla cada ocho horas.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el jarabe",
+     "ru": "сироп",
+     "note": "",
+     "example": "Este jarabe es para la tos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la tos",
+     "ru": "кашель",
+     "note": "",
+     "example": "No me deja dormir la tos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "estornudar",
+     "ru": "чихать",
+     "note": "",
+     "example": "No paro de estornudar por la alergia.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el tobillo",
+     "ru": "лодыжка",
+     "note": "",
+     "example": "Me torcí el tobillo jugando al fútbol.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la muñeca",
+     "ru": "запястье; кукла",
+     "note": "",
+     "example": "Me duele la muñeca de tanto escribir.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la rodilla",
+     "ru": "колено",
+     "note": "",
+     "example": "Tengo la rodilla hinchada.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la espalda",
+     "ru": "спина",
+     "note": "",
+     "example": "Me duele la espalda por la silla.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "torcerse",
+     "ru": "подвернуть (ногу и т. п.)",
+     "note": "",
+     "example": "Se torció el pie bajando la escalera.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el moretón",
+     "ru": "синяк",
+     "note": "",
+     "example": "Tengo un moretón en la pierna.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la herida",
+     "ru": "рана",
+     "note": "",
+     "example": "Limpiá bien la herida.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "embarazada",
+     "ru": "беременная",
+     "note": "ложный друг: не «смущённая»!",
+     "example": "Mi hermana está embarazada de cinco meses.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "contagiar",
+     "ru": "заразить",
+     "note": "contagiarse — заразиться",
+     "example": "No me abraces, te voy a contagiar.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la vacuna",
+     "ru": "прививка, вакцина",
+     "note": "vacunarse — привиться",
+     "example": "¿Ya te pusiste la vacuna de la gripe?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "estar descompuesto",
+     "ru": "плохо себя чувствовать (тошнить)",
+     "note": "ж. р. descompuesta",
+     "example": "Comí algo raro y estoy descompuesta.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "la farmacia de turno",
+     "ru": "дежурная аптека",
+     "note": "",
+     "example": "A esta hora solo abre la farmacia de turno.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "el análisis de sangre",
+     "ru": "анализ крови",
+     "note": "",
+     "example": "Mañana me hago un análisis de sangre en ayunas.",
+     "region": "общее",
+     "type": "phrase"
+    }
+   ]
+  },
+  {
+   "id": "casa",
+   "emoji": "🏠",
+   "name": "Дом и быт",
+   "level": "B1",
+   "words": [
+    {
+     "es": "la mudanza",
+     "ru": "переезд",
+     "note": "",
+     "example": "La mudanza fue un caos.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el alquiler",
+     "ru": "аренда; плата за аренду",
+     "note": "alquilar — снимать, сдавать",
+     "example": "El alquiler aumenta cada seis meses.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el barrio",
+     "ru": "район",
+     "note": "",
+     "example": "Me encanta este barrio, es re tranquilo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el inquilino",
+     "ru": "жилец, арендатор",
+     "note": "ж. р. la inquilina",
+     "example": "El inquilino de arriba hace mucho ruido.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el dueño",
+     "ru": "владелец, хозяин",
+     "note": "ж. р. la dueña",
+     "example": "Tengo que hablar con el dueño del departamento.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "las expensas",
+     "ru": "плата за обслуживание дома",
+     "note": "аналог «коммуналки» в доме",
+     "example": "Las expensas incluyen la limpieza del edificio.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la heladera",
+     "ru": "холодильник",
+     "note": "Исп. la nevera",
+     "example": "Hay empanadas en la heladera.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la canilla",
+     "ru": "кран",
+     "note": "Исп. el grifo",
+     "example": "Cerrá bien la canilla, que gotea.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la pileta",
+     "ru": "бассейн; раковина (на кухне)",
+     "note": "Исп. la piscina / el fregadero",
+     "example": "Este verano vamos a armar una pileta en el patio.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "lavar los platos",
+     "ru": "мыть посуду",
+     "note": "Исп. fregar",
+     "example": "Yo cociné, así que vos lavás los platos.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "colgar la ropa",
+     "ru": "развешивать бельё",
+     "note": "",
+     "example": "Colgá la ropa antes de que llueva.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "el lavarropas",
+     "ru": "стиральная машина",
+     "note": "Исп. la lavadora",
+     "example": "Se rompió el lavarropas.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la lavandina",
+     "ru": "хлорка, отбеливатель",
+     "note": "Исп. la lejía",
+     "example": "Limpiá el baño con lavandina.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el balde",
+     "ru": "ведро",
+     "note": "Исп. el cubo",
+     "example": "Traé un balde con agua.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el trapo",
+     "ru": "тряпка",
+     "note": "",
+     "example": "Pasá un trapo por la mesa.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "barrer",
+     "ru": "подметать",
+     "note": "",
+     "example": "Hoy me toca barrer el patio.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la escoba",
+     "ru": "метла",
+     "note": "",
+     "example": "¿Dónde dejaste la escoba?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el enchufe",
+     "ru": "розетка; вилка",
+     "note": "enchufar — включить в розетку",
+     "example": "No hay ningún enchufe cerca de la cama.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la lamparita",
+     "ru": "лампочка",
+     "note": "Исп. la bombilla",
+     "example": "Se quemó la lamparita del baño.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la persiana",
+     "ru": "жалюзи, ставни",
+     "note": "",
+     "example": "Bajá la persiana, entra mucho sol.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el portero eléctrico",
+     "ru": "домофон",
+     "note": "",
+     "example": "Tocá el portero eléctrico y te abro.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "el timbre",
+     "ru": "дверной звонок",
+     "note": "",
+     "example": "Sonó el timbre, debe ser el delivery.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la garrafa",
+     "ru": "газовый баллон",
+     "note": "",
+     "example": "Se terminó la garrafa y no podemos cocinar.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el placard",
+     "ru": "встроенный шкаф",
+     "note": "Исп. el armario empotrado",
+     "example": "Guardá las camperas en el placard.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el living",
+     "ru": "гостиная",
+     "note": "Исп. el salón",
+     "example": "Pusimos un sillón nuevo en el living.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el ruido",
+     "ru": "шум",
+     "note": "",
+     "example": "No puedo dormir con tanto ruido.",
+     "region": "общее",
+     "type": "word"
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "emoji": "🚀",
+   "name": "Посложнее, B2",
+   "level": "B2",
+   "words": [
+    {
+     "es": "la huelga",
+     "ru": "забастовка",
+     "note": "в Аргентине чаще el paro",
+     "example": "Mañana hay huelga de transporte.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "agotador",
+     "ru": "изнурительный, выматывающий",
+     "note": "ж. р. agotadora",
+     "example": "Fue un día agotador.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "empeñarse en",
+     "ru": "упорно стремиться, настаивать",
+     "note": "",
+     "example": "Se empeñó en pagar la cuenta.",
+     "region": "общее",
+     "type": "grammar"
+    },
+    {
+     "es": "el desafío",
+     "ru": "вызов, трудная задача",
+     "note": "",
+     "example": "Aprender un idioma es un desafío.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "desempeñar",
+     "ru": "исполнять (роль, обязанности)",
+     "note": "",
+     "example": "Desempeña un papel clave en la empresa.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el compromiso",
+     "ru": "обязательство; помолвка",
+     "note": "ложный друг: компромисс — término medio",
+     "example": "Tengo un compromiso esta noche.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la desigualdad",
+     "ru": "неравенство",
+     "note": "",
+     "example": "La desigualdad social sigue creciendo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el medio ambiente",
+     "ru": "окружающая среда",
+     "note": "",
+     "example": "Hay que cuidar el medio ambiente.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "sostenible",
+     "ru": "устойчивый, экологичный",
+     "note": "",
+     "example": "Buscamos un turismo más sostenible.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el ámbito",
+     "ru": "сфера, область",
+     "note": "",
+     "example": "En el ámbito laboral, es muy respetado.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "tomar medidas",
+     "ru": "принимать меры",
+     "note": "",
+     "example": "El gobierno tiene que tomar medidas.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "ponerse de acuerdo",
+     "ru": "договориться, прийти к согласию",
+     "note": "",
+     "example": "No logramos ponernos de acuerdo.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "llevar a cabo",
+     "ru": "осуществить, провести",
+     "note": "",
+     "example": "El proyecto se llevó a cabo en dos meses.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "a raíz de",
+     "ru": "вследствие, из-за",
+     "note": "",
+     "example": "A raíz de la crisis, muchos emigraron.",
+     "region": "общее",
+     "type": "phrase"
+    },
+    {
+     "es": "el malentendido",
+     "ru": "недоразумение",
+     "note": "",
+     "example": "Fue todo un malentendido.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la queja",
+     "ru": "жалоба",
+     "note": "",
+     "example": "Presenté una queja en la empresa.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el rendimiento",
+     "ru": "производительность; результативность",
+     "note": "",
+     "example": "Su rendimiento mejoró mucho.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "asumir",
+     "ru": "взять на себя (ответственность); вступить в должность",
+     "note": "ложный друг: не «предполагать»",
+     "example": "Tenés que asumir las consecuencias.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la incertidumbre",
+     "ru": "неопределённость",
+     "note": "",
+     "example": "Vivimos con mucha incertidumbre económica.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el auge",
+     "ru": "подъём, расцвет",
+     "note": "estar en auge — быть на подъёме",
+     "example": "El vino argentino está en auge.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la brecha",
+     "ru": "разрыв, пропасть",
+     "note": "la brecha salarial",
+     "example": "Hay una gran brecha entre ricos y pobres.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "inesperado",
+     "ru": "неожиданный",
+     "note": "ж. р. inesperada",
+     "example": "Recibí una visita inesperada.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "el agotamiento",
+     "ru": "истощение, выгорание",
+     "note": "",
+     "example": "Sufrió agotamiento por exceso de trabajo.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "reivindicar",
+     "ru": "отстаивать (права), требовать",
+     "note": "",
+     "example": "Reivindican sus derechos laborales.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la convivencia",
+     "ru": "совместная жизнь, сосуществование",
+     "note": "",
+     "example": "La convivencia con mi hermana no es fácil.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "cabe destacar",
+     "ru": "стоит отметить",
+     "note": "книжное",
+     "example": "Cabe destacar que la entrada es gratis.",
+     "region": "общее",
+     "type": "phrase"
+    }
+   ]
+  },
+  {
+   "id": "argentina",
+   "emoji": "🇦🇷",
+   "name": "Аргентина каждый день",
+   "level": "B1",
+   "words": [
+    {
+     "es": "el auto",
+     "ru": "машина",
+     "note": "Исп. el coche",
+     "example": "Dejé el auto en el garaje.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el celular",
+     "ru": "мобильный телефон",
+     "note": "Исп. el móvil",
+     "example": "Se me quedó sin batería el celular.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el departamento",
+     "ru": "квартира",
+     "note": "Исп. el piso",
+     "example": "Alquilo un departamento de dos ambientes.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la frutilla",
+     "ru": "клубника",
+     "note": "Исп. la fresa",
+     "example": "Hice una torta de frutillas.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la palta",
+     "ru": "авокадо",
+     "note": "Исп. el aguacate",
+     "example": "¿Le ponés palta a la tostada?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la papa",
+     "ru": "картофель",
+     "note": "Исп. la patata",
+     "example": "Hoy hay milanesa con puré de papas.",
+     "region": "LatAm",
+     "type": "word"
+    },
+    {
+     "es": "el durazno",
+     "ru": "персик",
+     "note": "Исп. el melocotón",
+     "example": "En verano los duraznos son riquísimos.",
+     "region": "LatAm",
+     "type": "word"
+    },
+    {
+     "es": "el ananá",
+     "ru": "ананас",
+     "note": "Исп. la piña",
+     "example": "El ananá está muy caro.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el choclo",
+     "ru": "кукуруза (початок)",
+     "note": "Исп. el maíz / la mazorca",
+     "example": "Las humitas se hacen con choclo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la manteca",
+     "ru": "сливочное масло",
+     "note": "Исп. la mantequilla",
+     "example": "Untá el pan con manteca.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el zapallo",
+     "ru": "тыква",
+     "note": "Исп. la calabaza",
+     "example": "Hice una sopa de zapallo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la remera",
+     "ru": "футболка",
+     "note": "Исп. la camiseta",
+     "example": "Me compré una remera nueva.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la pollera",
+     "ru": "юбка",
+     "note": "Исп. la falda",
+     "example": "Esa pollera te queda bárbara.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la campera",
+     "ru": "куртка",
+     "note": "Исп. la chaqueta / la cazadora",
+     "example": "Llevá la campera, que a la noche refresca.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "las zapatillas",
+     "ru": "кроссовки",
+     "note": "в Исп. тоже, но там ещё «тапочки»",
+     "example": "Me puse las zapatillas para salir a correr.",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "la birome",
+     "ru": "шариковая ручка",
+     "note": "Исп. el bolígrafo",
+     "example": "¿Me prestás una birome?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la plata",
+     "ru": "деньги",
+     "note": "Исп. el dinero; также «серебро»",
+     "example": "No tengo plata para salir este finde.",
+     "region": "LatAm",
+     "type": "word"
+    },
+    {
+     "es": "el kiosco",
+     "ru": "киоск (сладости, напитки)",
+     "note": "",
+     "example": "Voy al kiosco a comprar un alfajor.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "las facturas",
+     "ru": "сладкая выпечка к завтраку",
+     "note": "la factura — ещё и «счёт»",
+     "example": "Compré una docena de facturas para el mate.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la medialuna",
+     "ru": "круассан",
+     "note": "Исп. el cruasán",
+     "example": "Un café con leche y dos medialunas, por favor.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el asado",
+     "ru": "асадо, мясо на гриле (и встреча вокруг него)",
+     "note": "",
+     "example": "El domingo hacemos un asado en lo de mi tío.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la picada",
+     "ru": "закуски (нарезка) к напиткам",
+     "note": "",
+     "example": "Armamos una picada con queso y salame.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la bombilla",
+     "ru": "трубочка для мате",
+     "note": "в Исп. — лампочка!",
+     "example": "Se tapó la bombilla del mate.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "agarrar",
+     "ru": "брать, хватать",
+     "note": "в Аргентине вместо coger — оно там грубое!",
+     "example": "Agarrá un taxi, que es tarde.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "hacer la fila",
+     "ru": "стоять в очереди",
+     "note": "Исп. hacer cola",
+     "example": "Hicimos la fila una hora para entrar.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "el finde",
+     "ru": "выходные (разг.)",
+     "note": "от el fin de semana",
+     "example": "¿Qué hacés este finde?",
+     "region": "общее",
+     "type": "word"
+    },
+    {
+     "es": "vos",
+     "ru": "ты",
+     "note": "вместо tú: vos sos, vos tenés, vos querés, vení",
+     "example": "¿Vos sos de acá?",
+     "region": "AR",
+     "type": "grammar"
+    },
+    {
+     "es": "ustedes",
+     "ru": "вы (мн. ч.)",
+     "note": "вместо vosotros",
+     "example": "¿Ustedes vienen a la fiesta?",
+     "region": "LatAm",
+     "type": "grammar"
+    }
+   ]
+  },
+  {
+   "id": "lunfardo",
+   "emoji": "🗣️",
+   "name": "Разговорное и лунфардо",
+   "level": "B1",
+   "words": [
+    {
+     "es": "che",
+     "ru": "эй, слушай (обращение)",
+     "note": "",
+     "example": "Che, ¿tenés hora?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el laburo",
+     "ru": "работа (разг.)",
+     "note": "laburar — работать",
+     "example": "Tengo mucho laburo esta semana.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "re",
+     "ru": "очень (разг.)",
+     "note": "ставится перед словом: re lindo",
+     "example": "La peli está re buena.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "copado",
+     "ru": "классный, клёвый",
+     "note": "ж. р. copada",
+     "example": "Tu amiga es re copada.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el quilombo",
+     "ru": "бардак, неразбериха",
+     "note": "разговорное, немного грубоватое",
+     "example": "Mi cuarto es un quilombo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el chabón",
+     "ru": "чувак, парень",
+     "note": "ж. р. la chabona (реже)",
+     "example": "Ese chabón me cae bien.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la mina",
+     "ru": "девушка (разг.)",
+     "note": "может звучать грубовато",
+     "example": "Conocí a una mina muy simpática.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "boludo",
+     "ru": "придурок; среди друзей — «чувак»",
+     "note": "⚠️ грубое! С незнакомыми не использовать",
+     "example": "¡Qué hacés, boludo! Tanto tiempo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "dale",
+     "ru": "давай, ок, хорошо",
+     "note": "",
+     "example": "—¿Nos vemos a las 8? —Dale.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "bárbaro",
+     "ru": "отлично, супер",
+     "note": "",
+     "example": "¡Bárbaro, nos vemos mañana!",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la guita",
+     "ru": "деньги (сленг)",
+     "note": "",
+     "example": "No me alcanza la guita.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el bondi",
+     "ru": "автобус (сленг)",
+     "note": "= el colectivo",
+     "example": "Me tomé el bondi equivocado.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "el pibe",
+     "ru": "парень, пацан",
+     "note": "ж. р. la piba",
+     "example": "Los pibes están jugando a la pelota.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la birra",
+     "ru": "пиво (разг.)",
+     "note": "",
+     "example": "¿Vamos por unas birras?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "morfar",
+     "ru": "есть, лопать (сленг)",
+     "note": "",
+     "example": "¿Qué hay para morfar?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la buena onda",
+     "ru": "позитив, хорошая атмосфера; приятный человек",
+     "note": "tener buena onda; de onda — по-доброму",
+     "example": "Tu familia tiene muy buena onda.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "garpar",
+     "ru": "платить (сленг)",
+     "note": "pagar наоборот",
+     "example": "¿Quién garpa la cena?",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "la fiaca",
+     "ru": "лень",
+     "note": "tener fiaca",
+     "example": "Hoy tengo una fiaca terrible.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "chamuyar",
+     "ru": "заговаривать зубы, флиртовать",
+     "note": "el chamuyo — болтовня, флирт",
+     "example": "No me chamuyes, decime la verdad.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "posta",
+     "ru": "правда, серьёзно",
+     "note": "¿Posta? — серьёзно?",
+     "example": "Posta, no te estoy mintiendo.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "un toque",
+     "ru": "чуть-чуть, немножко",
+     "note": "",
+     "example": "Esperame un toque, ya bajo.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "la previa",
+     "ru": "вечеринка дома перед выходом в клуб",
+     "note": "",
+     "example": "Hacemos la previa en casa y después salimos.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "zarpado",
+     "ru": "офигенный; перегнувший палку",
+     "note": "ж. р. zarpada",
+     "example": "El recital estuvo zarpado.",
+     "region": "AR",
+     "type": "word"
+    },
+    {
+     "es": "estar al pedo",
+     "ru": "бездельничать, ничего не делать",
+     "note": "⚠️ грубовато",
+     "example": "Estoy al pedo, ¿querés que te ayude?",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "ni en pedo",
+     "ru": "ни за что",
+     "note": "⚠️ грубовато",
+     "example": "Ni en pedo voy a esa fiesta.",
+     "region": "AR",
+     "type": "phrase"
+    },
+    {
+     "es": "mala leche",
+     "ru": "невезение; подлость",
+     "note": "¡Qué mala leche! — вот невезуха",
+     "example": "Qué mala leche, se largó a llover.",
+     "region": "AR",
+     "type": "phrase"
+    }
+   ]
+  }
+ ],
+ "levelTest": [
+  {
+   "es": "la llave",
+   "ru": "ключ",
+   "level": "A2",
+   "wrong": [
+    "замок",
+    "дверь",
+    "окно"
+   ]
+  },
+  {
+   "es": "cansado",
+   "ru": "усталый",
+   "level": "A2",
+   "wrong": [
+    "сердитый",
+    "скучный",
+    "больной"
+   ]
+  },
+  {
+   "es": "alquilar",
+   "ru": "снимать, арендовать",
+   "level": "A2",
+   "wrong": [
+    "покупать",
+    "продавать",
+    "строить"
+   ]
+  },
+  {
+   "es": "el vecino",
+   "ru": "сосед",
+   "level": "A2",
+   "wrong": [
+    "родственник",
+    "гость",
+    "друг детства"
+   ]
+  },
+  {
+   "es": "barato",
+   "ru": "дешёвый",
+   "level": "A2",
+   "wrong": [
+    "дорогой",
+    "старый",
+    "грязный"
+   ]
+  },
+  {
+   "es": "temprano",
+   "ru": "рано",
+   "level": "A2",
+   "wrong": [
+    "поздно",
+    "быстро",
+    "временно"
+   ]
+  },
+  {
+   "es": "la cuenta",
+   "ru": "счёт",
+   "level": "A2",
+   "wrong": [
+    "сдача",
+    "чаевые",
+    "касса"
+   ]
+  },
+  {
+   "es": "despertarse",
+   "ru": "просыпаться",
+   "level": "A2",
+   "wrong": [
+    "засыпать",
+    "одеваться",
+    "отдыхать"
+   ]
+  },
+  {
+   "es": "aprovechar",
+   "ru": "воспользоваться (случаем)",
+   "level": "B1",
+   "wrong": [
+    "одобрить",
+    "приблизиться",
+    "обеспечить"
+   ]
+  },
+  {
+   "es": "quejarse",
+   "ru": "жаловаться",
+   "level": "B1",
+   "wrong": [
+    "оставаться",
+    "жениться",
+    "смеяться"
+   ]
+  },
+  {
+   "es": "el sueldo",
+   "ru": "зарплата",
+   "level": "B1",
+   "wrong": [
+    "пол",
+    "сон",
+    "долг"
+   ]
+  },
+  {
+   "es": "a menudo",
+   "ru": "часто",
+   "level": "B1",
+   "wrong": [
+    "немного",
+    "внезапно",
+    "медленно"
+   ]
+  },
+  {
+   "es": "lograr",
+   "ru": "добиться, суметь",
+   "level": "B1",
+   "wrong": [
+    "плакать",
+    "украсть",
+    "хвалить"
+   ]
+  },
+  {
+   "es": "la deuda",
+   "ru": "долг",
+   "level": "B1",
+   "wrong": [
+    "сомнение",
+    "хозяйка",
+    "налог"
+   ]
+  },
+  {
+   "es": "averiguar",
+   "ru": "выяснить",
+   "level": "B1",
+   "wrong": [
+    "испортить",
+    "поливать",
+    "стареть"
+   ]
+  },
+  {
+   "es": "el ascenso",
+   "ru": "повышение (в должности)",
+   "level": "B1",
+   "wrong": [
+    "лифт",
+    "спуск",
+    "увольнение"
+   ]
+  },
+  {
+   "es": "la huelga",
+   "ru": "забастовка",
+   "level": "B2",
+   "wrong": [
+    "след",
+    "огород",
+    "праздник"
+   ]
+  },
+  {
+   "es": "agotador",
+   "ru": "изнурительный",
+   "level": "B2",
+   "wrong": [
+    "увлекательный",
+    "неудачный",
+    "опустошённый"
+   ]
+  },
+  {
+   "es": "empeñarse",
+   "ru": "упорно стремиться, настаивать",
+   "level": "B2",
+   "wrong": [
+    "закладывать в ломбард",
+    "смущаться",
+    "начинать"
+   ]
+  },
+  {
+   "es": "la incertidumbre",
+   "ru": "неопределённость",
+   "level": "B2",
+   "wrong": [
+    "недоверие",
+    "неудобство",
+    "недоразумение"
+   ]
+  },
+  {
+   "es": "el malentendido",
+   "ru": "недоразумение",
+   "level": "B2",
+   "wrong": [
+    "невежда",
+    "злодей",
+    "плохое настроение"
+   ]
+  },
+  {
+   "es": "a raíz de",
+   "ru": "вследствие",
+   "level": "B2",
+   "wrong": [
+    "с корнем",
+    "в начале",
+    "вопреки"
+   ]
+  },
+  {
+   "es": "el auge",
+   "ru": "подъём, расцвет",
+   "level": "B2",
+   "wrong": [
+    "упадок",
+    "жадность",
+    "объём"
+   ]
+  },
+  {
+   "es": "desempeñar",
+   "ru": "исполнять (обязанности, роль)",
+   "level": "B2",
+   "wrong": [
+    "разочаровывать",
+    "безработный",
+    "выкупать"
+   ]
+  },
+  {
+   "es": "el desasosiego",
+   "ru": "тревога, беспокойство",
+   "level": "C1",
+   "wrong": [
+    "безразличие",
+    "усталость",
+    "одиночество"
+   ]
+  },
+  {
+   "es": "soslayar",
+   "ru": "обходить стороной (тему, проблему)",
+   "level": "C1",
+   "wrong": [
+    "смягчать",
+    "подчёркивать",
+    "утешать"
+   ]
+  },
+  {
+   "es": "ineludible",
+   "ru": "неизбежный",
+   "level": "C1",
+   "wrong": [
+    "невыносимый",
+    "неуловимый",
+    "непонятный"
+   ]
+  },
+  {
+   "es": "el atisbo",
+   "ru": "проблеск, намёк",
+   "level": "C1",
+   "wrong": [
+    "упрёк",
+    "обман",
+    "вершина"
+   ]
+  },
+  {
+   "es": "menoscabar",
+   "ru": "подрывать, умалять",
+   "level": "C1",
+   "wrong": [
+    "уменьшать цену",
+    "клеветать",
+    "обыскивать"
+   ]
+  },
+  {
+   "es": "ensimismado",
+   "ru": "погружённый в себя",
+   "level": "C1",
+   "wrong": [
+    "самоуверенный",
+    "одинаковый",
+    "восхищённый"
+   ]
+  },
+  {
+   "es": "el talante",
+   "ru": "нрав, расположение духа",
+   "level": "C1",
+   "wrong": [
+    "талант",
+    "ловкость",
+    "ростовщик"
+   ]
+  },
+  {
+   "es": "la entelequia",
+   "ru": "иллюзия, фикция",
+   "level": "C1",
+   "wrong": [
+    "целостность",
+    "хитрость",
+    "набор"
+   ]
+  }
+ ]
+}

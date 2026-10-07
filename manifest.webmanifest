@@ -1,0 +1,16 @@
+{
+  "name": "Мой испанский",
+  "short_name": "Español",
+  "description": "Заучивание испанских слов: фото тетради, тренировки, тесты и интервальные повторения",
+  "lang": "ru",
+  "start_url": "./#/home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5f0",
+  "theme_color": "#f7f5f0",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
