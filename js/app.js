@@ -354,7 +354,8 @@ function screenImport() {
         </div>
       </div>`).join('')}
     </div>
-    ${P.skipped.length ? `<p class="muted small">Пропущено как не-слова: ${P.skipped.map(esc).join('; ')}</p>` : ''}
+    <button class="btn" type="button" data-act="import-add-row">＋ Добавить слово вручную</button>
+    ${P.skipped.length ? `<p class="muted small">Не добавлено (не слова): ${P.skipped.map(esc).join('; ')}</p>` : ''}
     <div class="card">
       <label>Сохранить в модуль
         <select name="moduleId" data-input="mod-select">
@@ -519,6 +520,12 @@ const actions = {
     closeModal(); updateBadge(); go('words');
   },
   'cancel-import': () => { state.pending = null; go('add'); },
+  'import-add-row': () => {
+    state.pending.items.push({ es: '', ru: '', note: '', type: 'word', region: 'общее', include: true, manual: true });
+    rerender();
+    const inputs = $$('.import-row input[data-f=es]');
+    inputs[inputs.length - 1]?.focus();
+  },
   export: async () => {
     const data = await db.exportAll();
     const name = `espanol-${new Date().toISOString().slice(0, 10)}.json`;
