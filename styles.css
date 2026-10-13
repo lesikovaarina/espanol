@@ -319,8 +319,10 @@ ol li { margin-bottom: 4px; }
 .answer.good { border-color: var(--good) !important; background: var(--good-soft) !important; }
 .answer.bad { border-color: var(--bad) !important; background: var(--bad-soft) !important; }
 .answer.almost { border-color: var(--almost) !important; background: var(--almost-soft) !important; }
-.accents { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
-.acc { width: 40px; height: 42px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font: inherit; font-size: 18px; cursor: pointer; }
+.accents { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; align-items: center; padding: 6px; border-radius: 12px; background: var(--surface-2); }
+.accents-label { width: 100%; text-align: center; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.acc { width: 36px; height: 34px; border-radius: 8px; border: 0; background: var(--surface); color: var(--muted); font: inherit; font-size: 16px; cursor: pointer; }
+.acc:active { color: var(--text); background: var(--accent-soft); }
 
 .grade-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .grade-row .btn { padding: 10px 6px; font-size: 14px; }

@@ -192,7 +192,10 @@ function renderType(t, S) {
   <form class="type-form" data-form="s-type">
     <input id="ans" class="answer ${fb ? fb.result : ''}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" lang="es"
       placeholder="по-испански…" value="${esc(S.ui.value || '')}" ${fb ? 'disabled' : ''}>
-    ${fb ? '' : `<div class="accents">${ACCENTS.map(a => `<button type="button" class="acc" data-act="s-acc" data-c="${a}">${a}</button>`).join('')}</div>
+    ${fb ? '' : `<div class="accents" aria-label="Особые символы">
+      <span class="accents-label">Символы для ввода:</span>
+      ${(isLong(t.w) ? ACCENTS : ACCENTS.slice(0, 7)).map(a => `<button type="button" class="acc" data-act="s-acc" data-c="${a}">${a}</button>`).join('')}
+    </div>
     <div class="row"><button type="button" class="btn ghost" data-act="s-dontknow">Не знаю</button><button class="btn primary" type="submit">Проверить</button></div>`}
   </form>`;
 }
