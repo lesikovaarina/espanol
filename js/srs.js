@@ -72,6 +72,30 @@ export function status(w) {
   return 'learning';
 }
 
+// Прогресс слова к «выучено»: каждое успешное повторение = ступень, нужно 6 ступеней в каждом направлении
+// (после 6-й интервал становится 35 дней, то есть больше 3 недель).
+const LEARNED_STAGE = 6;
+export function progress(w) {
+  if (status(w) === 'learned') return 1;
+  return DIRS.reduce((a, d) => a + Math.min(w.srs[d].stage, LEARNED_STAGE), 0) / (DIRS.length * LEARNED_STAGE);
+}
+export function stepsLeft(w) {
+  if (status(w) === 'learned') return 0;
+  return DIRS.reduce((a, d) => a + Math.max(0, LEARNED_STAGE - w.srs[d].stage), 0);
+}
+// Когда слово станет «выученным», если все повторения будут успешными и вовремя.
+export function learnedEta(w) {
+  if (isNew(w)) return null;
+  if (status(w) === 'learned') return 0;
+  return Math.max(...DIRS.map(d => {
+    const c = w.srs[d];
+    if (c.stage >= LEARNED_STAGE) return c.due;
+    let t = Math.max(c.due, now());
+    for (let k = c.stage + 1; k < LEARNED_STAGE; k++) t += LADDER[k - 1];
+    return t;
+  }));
+}
+
 export const STATUS_LABEL = { new: 'новое', learning: 'учу', known: 'знакомо', learned: 'выучено' };
 
 export function dueDirs(w, t = now()) {

@@ -101,22 +101,23 @@ function screenHome() {
   const fc = srs.forecast(state.words);
   const fcMax = Math.max(1, ...fc.map(x => x.count));
   const days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
-  const seg = k => s.total ? (s[k] / s.total) * 100 : 0;
+  const overall = s.total ? Math.round((state.words.reduce((a, w) => a + srs.progress(w), 0) / s.total) * 100) : 0;
+  const etas = state.words.map(srs.learnedEta).filter(t => t);
+  const firstEta = etas.length ? Math.min(...etas) : 0;
+  const etaText = !s.learned && firstEta
+    ? `<p class="small muted eta">Первые слова станут «выученными» примерно <b>${new Date(firstEta).toLocaleDateString('ru-RU', { day: 'numeric', month: 'long' })}</b>, если повторять, когда приложение напоминает.</p>`
+    : '';
 
   return `${header('Мой испанский', { right: gear })}
   ${banners.join('')}
   <section class="card hero">
-    <div class="hero-num"><span class="num">${s.learned}</span><span class="of">из ${s.total}</span></div>
-    <div class="hero-label">${plural(s.learned, 'слово выучено', 'слова выучено', 'слов выучено')}</div>
-    <div class="stack-bar" role="img" aria-label="Прогресс по статусам">
-      ${['learned', 'known', 'learning', 'new'].map(k => `<div style="width:${seg(k)}%;background:${STATUS_COLORS[k]}"></div>`).join('')}
+    <div class="stat-tiles">
+      ${[['learned', 'выучено'], ['known', 'знакомо'], ['learning', 'учу'], ['new', 'новые']].map(([k, l]) => `<div class="stat-tile"><span class="stat-n" style="color:${STATUS_COLORS[k]}">${s[k]}</span><span class="stat-l">${l}</span></div>`).join('')}
     </div>
-    <div class="legend">
-      <span><i style="background:var(--s-learned)"></i>выучено ${s.learned}</span>
-      <span><i style="background:var(--s-known)"></i>знакомо ${s.known}</span>
-      <span><i style="background:var(--s-learning)"></i>учу ${s.learning}</span>
-      <span><i style="background:var(--s-new)"></i>новые ${s.new}</span>
-    </div>
+    <div class="overall"><span>Общий прогресс</span><b>${overall}%</b></div>
+    <div class="stack-bar" role="img" aria-label="Общий прогресс"><div style="width:${overall}%;background:var(--s-learned)"></div></div>
+    ${etaText}
+    <button class="link" data-act="progress-help">Как считается прогресс?</button>
     ${streak ? `<div class="streak">🔥 ${streak} ${plural(streak, 'день', 'дня', 'дней')} подряд</div>` : ''}
   </section>
 
@@ -151,9 +152,10 @@ function moduleList() {
   const rows = state.modules.map(m => {
     const ws = moduleWords(m.id);
     const st = srs.stats(ws);
-    const pct = ws.length ? Math.round(((st.learned + st.known * 0.5) / ws.length) * 100) : 0;
+    const pct = ws.length ? Math.round((ws.reduce((a, w) => a + srs.progress(w), 0) / ws.length) * 100) : 0;
+    const parts = [['learned', 'выучено'], ['known', 'знакомо'], ['learning', 'учу'], ['new', 'новых']].filter(([k]) => st[k]).map(([k, l]) => `${l} ${st[k]}`);
     return `<a class="mod-row" href="#/module/${m.id}">
-      <div class="mod-main"><b>${esc(m.name)}</b><span class="muted small">${words(ws.length)} · выучено ${st.learned}${st.due ? ` · <span class="due-dot">к повторению ${st.due}</span>` : ''}</span></div>
+      <div class="mod-main"><b>${esc(m.name)}</b><span class="muted small">${parts.join(' · ')}${st.due ? ` · <span class="due-dot">к повторению ${st.due}</span>` : ''}</span></div>
       <div class="ring" style="--p:${pct}"><span>${pct}%</span></div>
     </a>`;
   });
@@ -227,7 +229,8 @@ function wordRow(w) {
   const st = srs.status(w);
   return `<div class="word-row" data-act="edit-word" data-id="${w.id}">
     <i class="dot" style="background:${STATUS_COLORS[st]}" title="${srs.STATUS_LABEL[st]}"></i>
-    <div class="word-main"><b>${esc(w.es)}</b><span>${esc(w.ru)}</span>${w.note ? `<span class="muted small">${esc(w.note)}</span>` : ''}</div>
+    <div class="word-main"><b>${esc(w.es)}</b><span>${esc(w.ru)}</span>${w.note ? `<span class="muted small">${esc(w.note)}</span>` : ''}
+      <span class="word-status" style="color:${STATUS_COLORS[st]}">${srs.STATUS_LABEL[st]}${st === 'learning' || st === 'known' ? ` · до «выучено» ещё ${srs.stepsLeft(w)} ${plural(srs.stepsLeft(w), 'повторение', 'повторения', 'повторений')}` : ''}</span></div>
     ${sayBtn(w.es)}
   </div>`;
 }
@@ -472,6 +475,18 @@ const actions = {
   say: el => sp.speak(el.dataset.text, { slow: !!el.dataset.slow, accent: state.profile.accent }),
   dismiss: async el => { await saveProfile({ [el.dataset.k]: true }); rerender(); },
   'close-modal': () => closeModal(),
+  'progress-help': () => modal(`<h2>Как считается прогресс</h2>
+    <p>У каждого слова две стороны: <b>испанский → русский</b> и <b>русский → испанский</b>. Каждая проходит лестницу повторений:</p>
+    <p class="ladder">4 часа → 1 день → 3 дня → 7 дней → 16 дней → 35 дней</p>
+    <p>Верный ответ поднимает на ступень выше, поэтому следующее повторение будет позже. Ошибка возвращает в начало.</p>
+    <ul class="result-list">
+      <li><b style="color:var(--s-new)">Новые</b>: ещё не начинали.</li>
+      <li><b style="color:var(--s-learning)">Учу</b>: уже видели, в памяти держится меньше дня.</li>
+      <li><b style="color:var(--s-known)">Знакомо</b>: вспомнили на следующий день в обе стороны.</li>
+      <li><b style="color:var(--s-learned)">Выучено</b>: помните 3 недели и дольше в обе стороны. Это долговременная память.</li>
+    </ul>
+    <p><b>Процент</b> показывает, сколько ступеней уже пройдено: 6 в каждую сторону, всего 12 на слово. Так видно движение с первого дня, а «выучено» — это честная финишная черта примерно через месяц регулярных повторений.</p>
+    <button class="btn primary" data-act="close-modal">Понятно</button>`),
   learn: el => {
     const m = el.dataset.m;
     const pool = (m === 'all' ? state.words : moduleWords(m)).filter(srs.isNew).sort((a, b) => a.createdAt - b.createdAt);

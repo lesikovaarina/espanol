@@ -192,7 +192,21 @@ const strip = s => s.replace(/\(.*?\)/g, ' ');
 export const norm = s => strip(String(s || '')).toLowerCase().replace(/[¿?¡!.,;:«»"“”]/g, ' ').replace(/\s+/g, ' ').trim();
 const noAcc = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
 const noArt = s => s.replace(/^(el|la|los|las|un|una|lo)\s+/, '');
-export const variants = target => String(target || '').split(/\s*[\/;]\s*/).map(norm).filter(Boolean);
+// Допустимые ответы: «el resfrío / el resfriado» — два варианта (слэш с пробелами);
+// «el/la colega» — el colega, la colega, colega; «orgulloso/a» — orgulloso, orgullosa.
+export function variants(target) {
+  const out = new Set();
+  for (const raw of String(target || '').split(/\s+\/\s+|;/)) {
+    const v = norm(raw).replace(/\s*\/\s*/g, '/');
+    if (!v) continue;
+    out.add(v);
+    const art = v.match(/^((?:el|la|los|las|un|una)(?:\/(?:el|la|los|las|un|una))+)\s+(.+)$/);
+    if (art) { art[1].split('/').forEach(a => out.add(`${a} ${art[2]}`)); out.add(art[2]); }
+    const gender = v.match(/^(.*?)(\S+)([oe])\/(a|as)$/);
+    if (gender) { out.add(gender[1] + gender[2] + gender[3]); out.add(gender[1] + gender[2] + (gender[3] === 'o' ? '' : gender[3]) + gender[4]); }
+  }
+  return [...out];
+}
 
 function lev(a, b) {
   const m = a.length, n = b.length;
@@ -205,7 +219,7 @@ function lev(a, b) {
 
 // → { result: 'good'|'almost'|'bad', hint }
 export function checkAnswer(input, target) {
-  const a = norm(input);
+  const a = norm(input).replace(/\s*\/\s*/g, '/');
   if (!a) return { result: 'bad', hint: '' };
   const vs = variants(target);
   for (const v of vs) if (a === v) return { result: 'good', hint: '' };
