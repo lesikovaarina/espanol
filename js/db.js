@@ -50,14 +50,15 @@ export const db = {
 
   async importAll(data) {
     if (!data || data.app !== 'espanol' || !Array.isArray(data.words)) throw new Error('Это не резервная копия приложения');
-    const current = (await db.getKv('profile')) || {};
     await tx('words', 'readwrite', s => { s.clear(); data.words.forEach(w => s.put(w)); });
     await tx('modules', 'readwrite', s => { s.clear(); (data.modules || []).forEach(m => s.put(m)); });
-    await db.setKv('profile', { ...data.profile, geminiKey: current.geminiKey });
+    const { geminiKey, ...restProfile } = data.profile || {};
+    await db.setKv('profile', restProfile); // ключ хранится отдельно и при загрузке копии не трогается
   },
 
   async clearAll() {
     for (const s of STORES) await tx(s, 'readwrite', st => { st.clear(); });
+    try { localStorage.removeItem('espanol.geminiKey'); } catch {}
   },
 };
 

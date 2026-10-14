@@ -26,7 +26,7 @@ export async function loadAll() {
   const [words, modules, profile] = await Promise.all([db.all('words'), db.all('modules'), db.getKv('profile')]);
   state.words = words;
   state.modules = modules.sort((a, b) => b.createdAt - a.createdAt);
-  state.profile = { ...DEFAULT_PROFILE, ...(profile || {}) };
+  state.profile = { ...DEFAULT_PROFILE, ...(profile || {}), geminiKey: await loadKey(profile) };
 }
 
 export async function loadLibrary() {
@@ -40,9 +40,34 @@ export async function loadLibrary() {
   return state.library;
 }
 
+// Ключ Gemini хранится отдельно от профиля (в IndexedDB и копией в localStorage),
+// чтобы его не затёрла запись профиля из другой открытой вкладки.
+const KEY_LS = 'espanol.geminiKey';
+async function loadKey(profile) {
+  let key = await db.getKv('geminiKey');
+  if (!key) { try { key = localStorage.getItem(KEY_LS) || ''; } catch { key = ''; } }
+  if (!key && profile?.geminiKey) key = profile.geminiKey; // старые версии хранили ключ в профиле
+  if (key) await storeKey(key);
+  return key || '';
+}
+async function storeKey(key) {
+  await db.setKv('geminiKey', key);
+  try { if (key) localStorage.setItem(KEY_LS, key); else localStorage.removeItem(KEY_LS); } catch {}
+}
+
 export async function saveProfile(patch) {
-  Object.assign(state.profile, patch);
-  await db.setKv('profile', state.profile);
+  const { geminiKey, ...rest } = patch;
+  if (geminiKey !== undefined) {
+    await storeKey(geminiKey);
+    state.profile.geminiKey = geminiKey;
+  }
+  if (!Object.keys(rest).length) return;
+  // читаем свежую версию из базы: другая вкладка могла её изменить
+  const fresh = (await db.getKv('profile')) || {};
+  delete fresh.geminiKey;
+  const merged = { ...fresh, ...rest };
+  await db.setKv('profile', merged);
+  Object.assign(state.profile, rest);
 }
 
 export async function saveWord(w) {

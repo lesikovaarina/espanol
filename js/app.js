@@ -427,10 +427,11 @@ function screenSettings() {
       <p class="muted small">Это бесплатно, карта не нужна. На бесплатном тарифе Google может использовать запросы для улучшения своих моделей — для фото тетради это не страшно.</p>
     </details>
     <form data-form="key" class="row">
-      <input name="key" type="password" placeholder="AIza…" value="${esc(p.geminiKey)}" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <input name="key" class="key-input" type="text" inputmode="text" placeholder="AIza… или AQ.…" value="${esc(p.geminiKey)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-1p-ignore data-lpignore="true">
       <button class="btn primary" type="submit">Сохранить</button>
     </form>
     ${p.geminiKey ? '<p class="small ok-text">✓ Ключ сохранён</p>' : ''}
+    <p class="muted small">Сейчас вы ${isStandalone() ? 'в приложении с экрана «Домой»' : 'в браузере'}. Слова и ключ в браузере и в приложении с экрана «Домой» хранятся отдельно.</p>
   </section>
 
   <section class="card form">

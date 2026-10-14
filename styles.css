@@ -369,3 +369,6 @@ ol li { margin-bottom: 4px; }
 .loading-overlay .spinner { margin: 0; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation-duration: 2s !important; } }
+
+/* ключ скрыт точками, но это не поле пароля — чтобы iPhone не предлагал логин и сохранение пароля */
+.key-input { -webkit-text-security: disc; font-family: monospace; }
